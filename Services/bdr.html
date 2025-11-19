@@ -2,7 +2,7 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Summit IT Solutions</title>
+<title>Backup & Disaster Recovery - Summit IT Solutions</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Orbitron:wght@600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
@@ -32,39 +32,51 @@
       },
     };
   </script>
-<style type="text/tailwindcss">
-    .circuit-board-light {
-      background-color: #c9c9c9;
-      background-image: linear-gradient(rgba(46, 74, 111, 0.1) 1px, transparent 1px), linear-gradient(to right, rgba(46, 74, 111, 0.1) 1px, transparent 1px);
-      background-size: 3rem 3rem;
+<style type="text/tailwindcss">.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
     }
-    .circuit-board-dark {
-      background-color: #18181b;
-      background-image: linear-gradient(rgba(46, 74, 111, 0.2) 1px, transparent 1px), linear-gradient(to right, rgba(46, 74, 111, 0.2) 1px, transparent 1px);
-      background-size: 3rem 3rem;
+.hero-bg-light {
+    background-color: #f8fafc;
+    background-image: radial-gradient(circle at 1% 1%, rgba(191, 32, 38, 0.05), transparent 30%), radial-gradient(circle at 99% 99%, rgba(46, 74, 111, 0.05), transparent 30%);
+}
+.dark .hero-bg-light {
+    background-color: #18181B;
+    background-image: radial-gradient(circle at 100% 0%, rgba(191, 32, 38, 0.3), transparent 40%), radial-gradient(circle at 0% 100%, rgba(46, 74, 111, 0.6), transparent 40%);
+}
+details > summary {
+    list-style: none
     }
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }[x-cloak] {
-      display: none !important;
-    }.service-carousel::-webkit-scrollbar {
-      height: 8px;
+details > summary::-webkit-details-marker {
+    display: none
     }
-    .service-carousel::-webkit-scrollbar-track {
-      background: #EEEEEE;
-      border-radius: 10px;
+details > summary .material-symbols-outlined {
+    transition: transform 0.2s ease-in-out
     }
-    .dark .service-carousel::-webkit-scrollbar-track {
-      background: #bf2026;
+details[open] > summary .material-symbols-outlined {
+    transform: rotate(180deg)
     }
-    .service-carousel::-webkit-scrollbar-thumb {
-      background: #bf2026;
-      border-radius: 10px;
+.check-list-item {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA5_iFUXcR6prvBEECZd-c-FH4F6Ssm5dPdG5VC5mdfN74bhfVE3xtbo3PiActaEYnuvdEe3t1NzdlT3X2hGJAC4aXCMCvZByFKzwj7PznFoyFCqpALT4oxVzJ8DNhcNYLbcYEuKg9k9Rou2LCMePyY_XEcBfeqM4ejzirTMUccNjYpmjjdQxA93AgkblQvGBLsg0WJlvcymIP3zMTr6VveUmjYdmKedl522NzuhT7iu3l1Hs5ekVbKk3CKgntlmjUr9LQgEB5Jy5CT);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1.25rem;
+    padding-left: 2rem
     }
-    .service-carousel::-webkit-scrollbar-thumb:hover {
-      background: #bf2026;
-    }
-  </style>
+.step-line {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    top: 3.5rem;
+    bottom: -1rem;
+    width: 2px;
+    background-color: #e2e8f0;
+}
+.dark .step-line {
+    background-color: #475569;
+}
+.step:last-child .step-line {
+    display: none;
+}</style>
 
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -343,182 +355,187 @@
 
 
 <main>
-<section class="relative hero-bg-light text-slate-800 dark:text-white overflow-hidden">
-<div class="container mx-auto px-6 pt-24 pb-20 lg:pt-32 lg:pb-28">
-<div class="grid lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-6 z-10">
-<p class="text-primary font-semibold font-display tracking-wider">Backup &amp; Disaster Recovery</p>
-<h1 class="mt-2 text-4xl md:text-6xl font-bold font-display leading-tight text-slate-900 dark:text-white">
+  <section class="relative hero-bg-light text-slate-800 dark:text-white overflow-hidden">
+    <div class="container mx-auto px-6 pt-24 pb-20 lg:pt-32 lg:pb-28">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 z-10">
+          <p class="text-primary font-semibold font-display tracking-wider">Backup &amp; Disaster Recovery</p>
+          <h1 class="mt-2 text-4xl md:text-6xl font-bold font-display leading-tight text-slate-900 dark:text-white">
                         Your Shield Against the Unthinkable
-                    </h1>
-<p class="mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
                         Hardware fails. Disasters strike. Human error happens. When your critical data vanishes in an instant, how quickly can you recover? We ensure "if" becomes "when", and "when" becomes "in minutes".
-                    </p>
-<div class="mt-10 flex flex-col sm:flex-row gap-4">
-<a class="inline-block bg-primary text-white font-medium py-3 px-8 rounded-lg hover:opacity-90 transition-opacity text-center" href="#contact">
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a class="inline-block bg-primary text-white font-medium py-3 px-8 rounded-lg hover:opacity-90 transition-opacity text-center" href="#contact">
                             Protect My Data Now
-                        </a>
-<a class="inline-block bg-accent/10 text-accent dark:bg-white/10 dark:text-white font-medium py-3 px-8 rounded-lg hover:bg-accent/20 dark:hover:bg-white/20 transition-colors text-center" href="#features">
+            </a>
+            <a class="inline-block bg-accent/10 text-accent dark:bg-white/10 dark:text-white font-medium py-3 px-8 rounded-lg hover:bg-accent/20 dark:hover:bg-white/20 transition-colors text-center" href="#features">
                             See Our Solution
-                        </a>
-</div>
-</div>
-<div class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center">
-<div class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center">
-<div class="absolute inset-0 bg-primary/10 dark:bg-primary/20 rounded-full animate-pulse"></div>
-<div class="absolute inset-4 bg-primary/20 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"></div>
-<span class="material-symbols-outlined text-primary text-[150px] md:text-[200px] relative z-10" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48">cloud_sync</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 md:py-24">
-<div class="container mx-auto px-6">
-<div class="grid lg:grid-cols-2 gap-16 items-center">
-<div>
-<h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 dark:text-white">How Long Can Your Business Survive Without Its Data?</h2>
-<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
-                    A day? An hour? Many businesses discover their "backup plan" is just a copy, not a recovery strategy. Summit IT delivers a comprehensive solution that not only protects your data but guarantees its rapid restoration, ensuring minimal downtime and complete business continuity.
-                </p>
-<div class="mt-8 grid grid-cols-1 gap-4">
-<div class="check-list-item"><strong>Automated &amp; Verified Backups:</strong> Set-and-forget protection you can trust.</div>
-<div class="check-list-item"><strong>Rapid Recovery Time Objective (RTO):</strong> Get back online in minutes, not days.</div>
-<div class="check-list-item"><strong>Layered Redundancy:</strong> On-site and cloud backups for ultimate resilience.</div>
-</div>
-<div class="mt-10">
-<a class="inline-flex items-center gap-2 bg-primary text-white font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" href="#contact">
-<span>Review My Recovery Plan</span>
-<span class="material-symbols-outlined">arrow_forward</span>
-</a>
-</div>
-</div>
-<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xl">
-<h3 class="text-xl md:text-2xl font-bold font-display text-slate-900 dark:text-white">Why Summit IT for BDR?</h3>
-<p class="mt-3 text-slate-600 dark:text-slate-400">Our advantage lies in a proactive, multi-layered strategy that goes beyond simple backups.</p>
-<div class="mt-6 space-y-4">
-<details class="group bg-background-light dark:bg-slate-800/50 p-4 rounded-lg border border-slate-200 dark:border-slate-700 transition-shadow hover:shadow-md" open="">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<h4 class="font-bold text-primary">Rapid Recovery Architecture</h4>
-<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
-</summary>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">We don't just backup files; we create standby-ready virtual servers. This means in a disaster, we're not restoring data, we're activating a clone of your system for near-instant recovery.</p>
-</details>
-<details class="group bg-background-light dark:bg-slate-800/50 p-4 rounded-lg border border-slate-200 dark:border-slate-700 transition-shadow hover:shadow-md">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<h4 class="font-bold text-primary">Proactive &amp; Transparent Testing</h4>
-<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
-</summary>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">A backup is useless if it doesn't work. We conduct regular, non-disruptive recovery drills and provide clear reporting, so you have documented proof that your business is protected.</p>
-</details>
-<details class="group bg-background-light dark:bg-slate-800/50 p-4 rounded-lg border border-slate-200 dark:border-slate-700 transition-shadow hover:shadow-md">
-<summary class="flex items-center justify-between cursor-pointer list-none">
-<h4 class="font-bold text-primary">Expert Guidance &amp; Strategy</h4>
-<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
-</summary>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">We are not just a vendor; we're your partner. We help you define critical Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) to create a tailored strategy that aligns with your real-world business needs.</p>
-</details>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 md:py-24 bg-surface-light dark:bg-surface-dark" id="features">
-<div class="container mx-auto px-6">
-<div class="max-w-3xl mx-auto text-center">
-<h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 dark:text-white">How We Guarantee Business Continuity</h2>
-<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Our Backup &amp; Disaster Recovery (BDR) service is an end-to-end solution, meticulously designed to protect your data at every layer and ensure a swift, seamless recovery when you need it most.</p>
-</div>
-<div class="mt-16 grid lg:grid-cols-2 gap-8 items-start">
-<div class="space-y-4">
-<details class="group bg-background-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow" open="">
-<summary class="flex items-center justify-between cursor-pointer">
-<h4 class="text-lg font-bold font-display text-slate-900 dark:text-white">Automated Backup: Continuous Protection</h4>
-<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
-</summary>
-<p class="mt-4 text-slate-600 dark:text-slate-400">We implement automated, scheduled backups of your critical systems and data to both local and secure cloud storage. Every backup is verified for integrity, eliminating the risk of corrupted recovery files.</p>
-</details>
-<details class="group bg-background-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow">
-<summary class="flex items-center justify-between cursor-pointer">
-<h4 class="text-lg font-bold font-display text-slate-900 dark:text-white">Instant Virtualization: The Standby Server</h4>
-<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
-</summary>
-<p class="mt-4 text-slate-600 dark:text-slate-400">In the event of a server failure, we can instantly virtualize your latest backup on our hardware. Your team keeps working with minimal interruption while we address the primary issue. Is your current backup just a file, or a full-fledged standby system?</p>
-</details>
-<details class="group bg-background-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow">
-<summary class="flex items-center justify-between cursor-pointer">
-<h4 class="text-lg font-bold font-display text-slate-900 dark:text-white">Full Disaster Recovery: Your Business, Anywhere</h4>
-<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
-</summary>
-<p class="mt-4 text-slate-600 dark:text-slate-400">If your physical office is inaccessible due to fire, flood, or other disaster, we spin up your entire server environment in our secure cloud data center. Your business stays online, accessible from anywhere.</p>
-</details>
-</div>
-<div class="sticky top-28 bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xl">
-<h3 class="text-xl font-bold font-display text-primary">What's Your Recovery Time Objective?</h3>
-<p class="mt-3 text-slate-600 dark:text-slate-400">The most critical question in disaster recovery. We work with you to define clear RTOs and RPOs (Recovery Point Objectives) to build a plan that meets your specific business needs.</p>
-<ul class="mt-4 space-y-3">
-<li class="flex items-start">
-<span class="material-symbols-outlined text-accent text-xl mr-2 mt-0.5 flex-shrink-0">check_circle</span>
-<span>Granular file-level and full system recovery options.</span>
-</li>
-<li class="flex items-start">
-<span class="material-symbols-outlined text-accent text-xl mr-2 mt-0.5 flex-shrink-0">check_circle</span>
-<span>Regular, non-disruptive testing and validation.</span>
-</li>
-<li class="flex items-start">
-<span class="material-symbols-outlined text-accent text-xl mr-2 mt-0.5 flex-shrink-0">check_circle</span>
-<span>Clear, documented recovery plan and procedures.</span>
-</li>
-</ul>
-<a class="mt-6 inline-block w-full text-center bg-primary text-white font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" href="#">Define My Recovery Strategy</a>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 md:py-24">
-<div class="container mx-auto px-6">
-<div class="text-center max-w-3xl mx-auto">
-<h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 dark:text-white">More Than a Backup: A Foundation for Resilience</h2>
-<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">What if your data protection plan could do more than just recover files? A robust BDR strategy from Summit IT is a competitive advantage, providing the ultimate peace of mind and operational stability.</p>
-</div>
-<div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl">shield</span>
-<h5 class="mt-4 font-bold text-slate-800 dark:text-white">Protect Against Ransomware</h5>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Make ransomware demands irrelevant with the ability to roll back your entire system to a pre-attack state.</p>
-</div>
-<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl">update</span>
-<h5 class="mt-4 font-bold text-slate-800 dark:text-white">Eliminate Downtime Costs</h5>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Every minute of downtime costs you money. Our rapid recovery minimizes financial impact and keeps your team productive.</p>
-</div>
-<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl">cloud_done</span>
-<h5 class="mt-4 font-bold text-slate-800 dark:text-white">Ensure Data Integrity</h5>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Our constant verification ensures your backups are always complete, uncorrupted, and ready for restoration.</p>
-</div>
-<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-<span class="material-symbols-outlined text-primary text-3xl">gavel</span>
-<h5 class="mt-4 font-bold text-slate-800 dark:text-white">Meet Compliance Mandates</h5>
-<p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Satisfy industry requirements for data protection and availability, avoiding penalties and building client trust.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-black" id="contact">
-<div class="container mx-auto px-6 text-center">
-<h2 class="text-3xl md:text-4xl font-bold font-display text-white">Ready to Make Data Loss a Thing of the Past?</h2>
-<p class="mt-4 max-w-2xl mx-auto text-white/90">
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center">
+          <div class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center">
+            <div class="absolute inset-0 bg-primary/10 dark:bg-primary/20 rounded-full animate-pulse"></div>
+            <div class="absolute inset-4 bg-primary/20 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"></div>
+            <span class="material-symbols-outlined text-primary text-[150px] md:text-[200px] relative z-10" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48">cloud_sync</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 md:py-24">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 dark:text-white">How Long Can Your Business Survive Without Its Data?</h2>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+             A day? An hour? Many businesses discover their "backup plan" is just a copy, not a recovery strategy. Summit IT delivers a comprehensive solution that not only protects your data but guarantees its rapid restoration, ensuring minimal downtime and complete business continuity.
+          </p>
+          <div class="mt-8 grid grid-cols-1 gap-4">
+            <div class="check-list-item"><strong>Automated &amp; Verified Backups:</strong> Set-and-forget protection you can trust.</div>
+            <div class="check-list-item"><strong>Rapid Recovery Time Objective (RTO):</strong> Get back online in minutes, not days.</div>
+            <div class="check-list-item"><strong>Layered Redundancy:</strong> On-site and cloud backups for ultimate resilience.</div>
+          </div>
+          <div class="mt-10">
+            <a class="inline-flex items-center gap-2 bg-primary text-white font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" href="#contact">
+              <span>Review My Recovery Plan</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xl">
+          <h3 class="text-xl md:text-2xl font-bold font-display text-slate-900 dark:text-white">Why Summit IT for BDR?</h3>
+          <p class="mt-3 text-slate-600 dark:text-slate-400">Our advantage lies in a proactive, multi-layered strategy that goes beyond simple backups.</p>
+          <div class="mt-6 space-y-4">
+            <details class="group bg-background-light dark:bg-slate-800/50 p-4 rounded-lg border border-slate-200 dark:border-slate-700 transition-shadow hover:shadow-md" open="">
+              <summary class="flex items-center justify-between cursor-pointer list-none">
+                <h4 class="font-bold text-primary">Rapid Recovery Architecture</h4>
+                <span class="material-symbols-outlined text-slate-500 dark:text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+              </summary>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">We don't just backup files; we create standby-ready virtual servers. This means in a disaster, we're not restoring data, we're activating a clone of your system for near-instant recovery.</p>
+          </details>
+          <details class="group bg-background-light dark:bg-slate-800/50 p-4 rounded-lg border border-slate-200 dark:border-slate-700 transition-shadow hover:shadow-md">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h4 class="font-bold text-primary">Proactive &amp; Transparent Testing</h4>
+              <span class="material-symbols-outlined text-slate-500 dark:text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">A backup is useless if it doesn't work. We conduct regular, non-disruptive recovery drills and provide clear reporting, so you have documented proof that your business is protected.</p>
+          </details>
+          <details class="group bg-background-light dark:bg-slate-800/50 p-4 rounded-lg border border-slate-200 dark:border-slate-700 transition-shadow hover:shadow-md">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <h4 class="font-bold text-primary">Expert Guidance &amp; Strategy</h4>
+              <span class="material-symbols-outlined text-slate-500 dark:text-slate-400 transition-transform duration-300 group-open:rotate-180">expand_more</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">We are not just a vendor; we're your partner. We help you define critical Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) to create a tailored strategy that aligns with your real-world business needs.</p>
+          </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-24 bg-surface-light dark:bg-surface-dark" id="features">
+    <div class="container mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 dark:text-white">How We Guarantee Business Continuity</h2>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Our Backup &amp; Disaster Recovery (BDR) service is an end-to-end solution, meticulously designed to protect your data at every layer and ensure a swift, seamless recovery when you need it most.</p>
+      </div>
+      <div class="mt-16 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="space-y-4">
+        <details class="group bg-background-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow" open="">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h4 class="text-lg font-bold font-display text-slate-900 dark:text-white">Automated Backup: Continuous Protection</h4>
+            <span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
+          </summary>
+          <p class="mt-4 text-slate-600 dark:text-slate-400">We implement automated, scheduled backups of your critical systems and data to both local and secure cloud storage. Every backup is verified for integrity, eliminating the risk of corrupted recovery files.</p>
+        </details>
+        <details class="group bg-background-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h4 class="text-lg font-bold font-display text-slate-900 dark:text-white">Instant Virtualization: The Standby Server</h4>
+            <span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
+          </summary>
+          <p class="mt-4 text-slate-600 dark:text-slate-400">In the event of a server failure, we can instantly virtualize your latest backup on our hardware. Your team keeps working with minimal interruption while we address the primary issue. Is your current backup just a file, or a full-fledged standby system?</p>
+        </details>
+        <details class="group bg-background-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <h4 class="text-lg font-bold font-display text-slate-900 dark:text-white">Full Disaster Recovery: Your Business, Anywhere</h4>
+              <span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
+          </summary>
+          <p class="mt-4 text-slate-600 dark:text-slate-400">If your physical office is inaccessible due to fire, flood, or other disaster, we spin up your entire server environment in our secure cloud data center. Your business stays online, accessible from anywhere.</p>
+        </details>
+      </div>
+      <div class="sticky top-28 bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-xl">
+        <h3 class="text-xl font-bold font-display text-primary">What's Your Recovery Time Objective?</h3>
+        <p class="mt-3 text-slate-600 dark:text-slate-400">The most critical question in disaster recovery. We work with you to define clear RTOs and RPOs (Recovery Point Objectives) to build a plan that meets your specific business needs.</p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex items-start">
+            <span class="material-symbols-outlined text-accent text-xl mr-2 mt-0.5 flex-shrink-0">check_circle</span>
+            <span>Granular file-level and full system recovery options.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-symbols-outlined text-accent text-xl mr-2 mt-0.5 flex-shrink-0">check_circle</span>
+            <span>Regular, non-disruptive testing and validation.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="material-symbols-outlined text-accent text-xl mr-2 mt-0.5 flex-shrink-0">check_circle</span>
+            <span>Clear, documented recovery plan and procedures.</span>
+          </li>
+        </ul>
+        <a class="mt-6 inline-block w-full text-center bg-primary text-white font-medium py-3 px-6 rounded-lg hover:opacity-90 transition-opacity" href="#">Define My Recovery Strategy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-24">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold font-display text-slate-900 dark:text-white">More Than a Backup: A Foundation for Resilience</h2>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">What if your data protection plan could do more than just recover files? A robust BDR strategy from Summit IT is a competitive advantage, providing the ultimate peace of mind and operational stability.</p>
+      </div>
+      <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+          <span class="material-symbols-outlined text-primary text-3xl">shield</span>
+          <h5 class="mt-4 font-bold text-slate-800 dark:text-white">Protect Against Ransomware</h5>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Make ransomware demands irrelevant with the ability to roll back your entire system to a pre-attack state.</p>
+        </div>
+        <div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+          <span class="material-symbols-outlined text-primary text-3xl">update</span>
+          <h5 class="mt-4 font-bold text-slate-800 dark:text-white">Eliminate Downtime Costs</h5>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Every minute of downtime costs you money. Our rapid recovery minimizes financial impact and keeps your team productive.</p>
+        </div>
+        <div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+          <span class="material-symbols-outlined text-primary text-3xl">cloud_done</span>
+          <h5 class="mt-4 font-bold text-slate-800 dark:text-white">Ensure Data Integrity</h5>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Our constant verification ensures your backups are always complete, uncorrupted, and ready for restoration.</p>
+        </div>
+        <div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+          <span class="material-symbols-outlined text-primary text-3xl">gavel</span>
+          <h5 class="mt-4 font-bold text-slate-800 dark:text-white">Meet Compliance Mandates</h5>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Satisfy industry requirements for data protection and availability, avoiding penalties and building client trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-black" id="contact">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold font-display text-white">Ready to Make Data Loss a Thing of the Past?</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-white/90">
           Don't wait for a disaster to test your backup plan. Let's have a conversation about your current strategy and discover how Summit IT can provide true business resilience and peace of mind.
-        </p>
-<div class="mt-8">
-<a class="bg-accent text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-opacity text-lg" href="#">
-            Get My Free BDR Assessment
-          </a>
-</div>
-</div>
-</section>
+      </p>
+      <div class="mt-8">
+        <a class="bg-accent text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-opacity text-lg" href="#">
+        Get My Free BDR Assessment
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="bg-accent dark:bg-slate-900 border-t border-black dark:border-slate-800 text-white">
   <div class="container mx-auto px-6 py-12 md:py-16 md:px-16">
     <div class="flex justify-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:flex justify-center">
