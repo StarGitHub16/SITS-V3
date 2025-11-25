@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5501
+    // The first object's contents are merged into the main object
+    "liveServer.settings.port": 5501, 
+
+    // The second object's contents are merged into the main object
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "<another formatter>"
+    }
 }
