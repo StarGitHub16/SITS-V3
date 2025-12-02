@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
 <link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 <script>
     tailwind.config = {
       darkMode: "class",
@@ -502,29 +503,13 @@
           <section
             class="bg-white dark:bg-background-dark py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-center"
           >
-            <div class="max-w-4xl mx-auto">
-              <div class="flex justify-center items-center mb-6">
-                <span
-                  class="material-symbols-outlined text-6xl text-primary"
-                  style="
-                    font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0,
-                      'opsz' 48;
-                  "
-                  >gavel</span
-                >
-                <span
-                  class="material-symbols-outlined text-8xl text-accent mx-[-1rem]"
-                  >verified_user</span
-                >
-                <span
-                  class="material-symbols-outlined text-6xl text-primary"
-                  style="
-                    font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0,
-                      'opsz' 48;
-                  "
-                  >checklist</span
-                >
-              </div>
+           <div class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center">
+        <div class="relative w-[300px] h-[300px] md:w-[330px] md:h-[330px] flex items-center justify-center">
+          <div class="absolute inset-0 bg-[#FF6B6B]/10 dark:bg-primary/20 rounded-full animate-pulse"></div>
+          <div class="absolute inset-4 bg-[#FF6B6B]/60 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"></div>
+          <div id="lottie-container"  class="w-[300px] px-10" style="font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 48"></div>
+        </div>
+      </div>
               <h1
                 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tighter font-display leading-normal"
               >
@@ -548,6 +533,8 @@
                 >
                   <span class="truncate">Assess Your Risk</span>
                 </button>
+
+                
               </div>
             </div>
           </section>
@@ -1198,4 +1185,17 @@
   </body>
   <!--JavaScipt-->
   <script src="../js/script.js"></script>
+
+  <!--Lottie Scripts-->
+  <script>
+    var animation = lottie.loadAnimation({
+
+      container: document.getElementById('lottie-container'), 
+      renderer:'svg',
+      loop: true,
+      autoplay: true,
+      path: '../asset/compliancelotte.json'
+    });
+  </script>
+
 </html>
