@@ -625,7 +625,9 @@
             </div>
           </div>
         </section>
-        <section class="py-20 sm:py-24 bg-background-light">
+
+        <!--This is the Horizontal Section for MPS-->
+        <section class="py-30 sm:py-24 bg-background-light overflow-x-hidden">
           <div class="container mx-auto max-w-6xl px-4">
             <div class="text-center max-w-3xl mx-auto mb-12">
               <h2
@@ -639,95 +641,478 @@
                 organization.
               </p>
             </div>
-            <div class="grid lg:grid-cols-3 gap-8">
-              <div class="lg:col-span-1">
-                <div class="flex flex-col gap-2 sticky top-28">
-                  <button
-                    class="group flex items-center gap-4 rounded-lg p-4 text-left bg-primary text-white shadow-md transition-all"
-                  >
-                    <span class="material-symbols-outlined">savings</span>
-                    <span class="font-bold font-display">Cost Reduction</span>
-                  </button>
-                  <button
-                    class="group flex items-center gap-4 rounded-lg p-4 text-left text-text-primary bg-background-gray hover:bg-white hover:shadow-md transition-all"
-                  >
-                    <span class="material-symbols-outlined text-secondary"
-                      >security</span
-                    >
-                    <span class="font-medium font-display">Enhanced Security</span>
-                  </button>
-                  <button
-                    class="group flex items-center gap-4 rounded-lg p-4 text-left text-text-primary bg-background-gray hover:bg-white hover:shadow-md transition-all"
-                  >
-                    <span class="material-symbols-outlined text-secondary"
-                      >build</span
-                    >
-                    <span class="font-medium font-display">Proactive Maintenance</span>
-                  </button>
-                  <button
-                    class="group flex items-center gap-4 rounded-lg p-4 text-left text-text-primary bg-background-gray hover:bg-white hover:shadow-md transition-all"
-                  >
-                    <span class="material-symbols-outlined text-secondary"
-                      >eco</span
-                    >
-                    <span class="font-medium font-display">Eco-Friendly</span>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="lg:col-span-2 bg-white p-8 rounded-xl shadow-lg border border-gray-200"
+
+          <div class="grid lg:grid-cols-3 gap-8">
+
+            <!--Buttons-->
+          <div class="lg:col-span-1">
+            <div class="flex flex-col gap-2 sticky top-28">
+              <button
+              class="group flex items-center gap-4 rounded-lg p-4 text-left bg-primary text-white shadow-md transition-all solution-button" data-target="content-cost"
               >
-                <div class="flex flex-col gap-6">
+              <span class="material-symbols-outlined">savings</span>
+              <span class="font-bold font-display">Cost Reduction</span>
+              </button>
+            <button
+              class="group flex items-center gap-4 rounded-lg p-4 text-left text-text-primary bg-background-gray hover:bg-white hover:shadow-md transition-all solution-button" data-target="content-security"
+            >
+              <span class="material-symbols-outlined text-secondary">security</span>
+              <span class="font-medium font-display">Enhanced Security</span>
+            </button>
+            <button
+              class="group flex items-center gap-4 rounded-lg p-4 text-left text-text-primary bg-background-gray hover:bg-white hover:shadow-md transition-all solution-button" data-target="content-maintenance"
+            >
+              <span class="material-symbols-outlined text-secondary">build</span>
+              <span class="font-medium font-display">Proactive Maintenance</span>
+            </button>
+            <button
+              class="group flex items-center gap-4 rounded-lg p-4 text-left text-text-primary bg-background-gray hover:bg-white hover:shadow-md transition-all solution-button" data-target="content-eco"
+            >
+              <span class="material-symbols-outlined text-secondary">eco</span>
+              <span class="font-medium font-display">Eco-Friendly</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Content-->
+    <div class="lg:col-span-2 relative min-h-[640px]">
+        
+        <div
+          id="content-cost" 
+          class="absolute top-0 left-0 w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 solution-content 
+                 transition-all duration-500 ease-in-out opacity-100 translate-x-0"
+        >
+
+          <div class="flex flex-col gap-6">
+
                   <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
+
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[300px]"
+
                     data-alt="Infographic showing cost savings from managed print services."
+
                     style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCc2h_SUAj8CPGx2AzrGKDX1KYDXxgiVB2XEvx9ZAKKd5mXcH17O8NEQCeMtAA8V_s_MwFdgfXhXyM6NFmhQQaS1dTNoWAGkWIWcyKGvOM_I-2QbzrMMNvduMX4tYysug-dC-hi7XrUJRQZyjU730Ouuxn60C4LPXkpugXms44HpPqrz-vThc4IrXFgGwFDxMf1Vw02sJfAW8Wj31keuZNNwauNGYmIAtvtEhBD1HEIkMhgz9CIPXerkRQncJ6Nk4aKGPGTR78SZo-G');
+
+                      background-image: url('../asset/AdobeStock_105046282.jpeg');
+
                     "
+
                   ></div>
+
                   <h3 class="text-2xl font-bold text-primary font-display">
+
                     Predictable Budgets, Real Savings
+
                   </h3>
+
                   <p class="text-gray-600">
+
                     Stop guessing your print expenses. We consolidate costs into
+
                     a single, predictable monthly invoice. By optimizing your
+
                     fleet, reducing waste, and automating supplies, we typically
+
                     save our clients up to 30% on their overall printing costs.
+
                   </p>
+
                   <ul class="space-y-3">
+
                     <li class="flex items-start gap-3">
+
                       <span
+
                         class="material-symbols-outlined text-green-500 mt-1"
+
                         >check_circle</span
+
                       >
+
                       <span
+
                         >Eliminate capital expenditure on new printer
+
                         hardware.</span
+
                       >
+
                     </li>
+
                     <li class="flex items-start gap-3">
+
                       <span
+
                         class="material-symbols-outlined text-green-500 mt-1"
+
                         >check_circle</span
+
                       >
+
                       <span
+
                         >Reduce waste with optimized device settings and user
+
                         policies.</span
+
                       >
+
                     </li>
+
                     <li class="flex items-start gap-3">
+
                       <span
+
                         class="material-symbols-outlined text-green-500 mt-1"
+
                         >check_circle</span
+
                       >
+
                       <span
+
                         >Consolidate vendors and invoices for simplified
+
                         accounting.</span
+
                       >
+
                     </li>
+
                   </ul>
+
                 </div>
-              </div>
+
+            </div>
+
+        <div
+          id="content-security" 
+          class="absolute top-0 left-0 w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 solution-content 
+                 transition-all duration-500 ease-in-out hidden opacity-0 translate-x-full"
+        >
+
+        <div class="flex flex-col gap-6">
+
+                  <div
+
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[300px]"
+
+                    data-alt="Infographic showing cost savings from managed print services."
+
+                    style="
+
+                      background-image: url('../asset/AdobeStock_105046282.jpeg');
+
+                    "
+
+                  ></div>
+
+                  <h3 class="text-2xl font-bold text-primary font-display">
+
+                    Predictable Budgets, Real Savings
+
+                  </h3>
+
+                  <p class="text-gray-600">
+
+                    Stop guessing your print expenses. We consolidate costs into
+
+                    a single, predictable monthly invoice. By optimizing your
+
+                    fleet, reducing waste, and automating supplies, we typically
+
+                    save our clients up to 30% on their overall printing costs.
+
+                  </p>
+
+                  <ul class="space-y-3">
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Eliminate capital expenditure on new printer
+
+                        hardware.</span
+
+                      >
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Reduce waste with optimized device settings and user
+
+                        policies.</span
+
+                      >
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Consolidate vendors and invoices for simplified
+
+                        accounting.</span
+
+                      >
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+            </div>
+
+           
+        
+        <div
+          id="content-maintenance" 
+          class="absolute top-0 left-0 w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 solution-content 
+                 transition-all duration-500 ease-in-out hidden opacity-0 translate-x-full"
+        >
+           <div class="flex flex-col gap-6">
+
+                  <div
+
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[300px]"
+
+                    data-alt="Infographic showing cost savings from managed print services."
+
+                    style="
+
+                      background-image: url('../asset/AdobeStock_105046282.jpeg');
+
+                    "
+
+                  ></div>
+
+                  <h3 class="text-2xl font-bold text-primary font-display">
+
+                    Predictable Budgets, Real Savings
+
+                  </h3>
+
+                  <p class="text-gray-600">
+
+                    Stop guessing your print expenses. We consolidate costs into
+
+                    a single, predictable monthly invoice. By optimizing your
+
+                    fleet, reducing waste, and automating supplies, we typically
+
+                    save our clients up to 30% on their overall printing costs.
+
+                  </p>
+
+                  <ul class="space-y-3">
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Eliminate capital expenditure on new printer
+
+                        hardware.</span
+
+                      >
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Reduce waste with optimized device settings and user
+
+                        policies.</span
+
+                      >
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Consolidate vendors and invoices for simplified
+
+                        accounting.</span
+
+                      >
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+            </div>
+        
+
+        <div
+          id="content-eco" 
+          class="absolute top-0 left-0 w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 solution-content 
+                 transition-all duration-500 ease-in-out hidden opacity-0 translate-x-full"
+        >
+           <div class="flex flex-col gap-6">
+
+                  <div
+
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-[300px]"
+
+                    data-alt="Infographic showing cost savings from managed print services."
+
+                    style="
+
+                      background-image: url('../asset/AdobeStock_105046282.jpeg');
+
+                    "
+
+                  ></div>
+
+                  <h3 class="text-2xl font-bold text-primary font-display">
+
+                    Predictable Budgets, Real Savings
+
+                  </h3>
+
+                  <p class="text-gray-600">
+
+                    Stop guessing your print expenses. We consolidate costs into
+
+                    a single, predictable monthly invoice. By optimizing your
+
+                    fleet, reducing waste, and automating supplies, we typically
+
+                    save our clients up to 30% on their overall printing costs.
+
+                  </p>
+
+                  <ul class="space-y-3">
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Eliminate capital expenditure on new printer
+
+                        hardware.</span
+
+                      >
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Reduce waste with optimized device settings and user
+
+                        policies.</span
+
+                      >
+
+                    </li>
+
+                    <li class="flex items-start gap-3">
+
+                      <span
+
+                        class="material-symbols-outlined text-green-500 mt-1"
+
+                        >check_circle</span
+
+                      >
+
+                      <span
+
+                        >Consolidate vendors and invoices for simplified
+
+                        accounting.</span
+
+                      >
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
             </div>
           </div>
         </section>
