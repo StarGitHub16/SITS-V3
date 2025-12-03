@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
 <link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 <script>
     tailwind.config = {
       darkMode: "class",
@@ -534,63 +535,16 @@
                     href="#features"
                   >
                     Explore Features
-                  </a>
+                  </a>   
                 </div>
               </div>
-              <div
-                class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center"
-              >
-                <div
-                  class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center"
-                >
-                  <div class="absolute inset-0">
-                    <svg
-                      class="w-full h-full"
-                      fill="none"
-                      viewBox="0 0 400 400"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        class="stroke-primary/20"
-                        cx="200"
-                        cy="200"
-                        r="190"
-                        stroke-dasharray="10 10"
-                        stroke-width="2"
-                      ></circle>
-                      <circle
-                        class="stroke-accent/30"
-                        cx="200"
-                        cy="200"
-                        r="160"
-                        stroke-width="1"
-                      ></circle>
-                      <path
-                        class="stroke-primary/30"
-                        d="M341.421 258.579L258.579 341.421M58.5786 141.421L141.421 58.5786"
-                        stroke-linecap="round"
-                        stroke-width="2"
-                      ></path>
-                      <path
-                        class="stroke-accent/50"
-                        d="M200 80 V40M200 360 V320M320 200 H360M40 200 H80"
-                        stroke-linecap="round"
-                        stroke-width="1"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span
-                    class="material-symbols-outlined text-primary text-[150px] md:text-[200px] relative z-10"
-                    style="
-                      font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0,
-                        'opsz' 48;
-                    "
-                    >meeting_room</span
-                  >
+             <div class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center">
+                <div class="relative w-[300px] h-[300px] md:w-[600px] md:h-[600px] flex items-center justify-center">
+                  <div class="absolute inset-0 bg-[#FF6B6B]/10 dark:bg-primary/20 rounded-full animate-pulse"></div>
+                  <div class="absolute inset-4 bg-[#FF6B6B]/60 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"></div>
+                  <div id="lottie-container"  class="w-[500px] px-10" style="font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 48"></div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
         <section class="py-20 md:py-24" id="features">
           <div class="container mx-auto px-6">
@@ -1258,4 +1212,17 @@
   </body>
   <!--JavaScipt-->
   <script src="../js/script.js"></script>
+
+   <!--Lottie Scripts-->
+  <script>
+    var animation = lottie.loadAnimation({
+
+      container: document.getElementById('lottie-container'), 
+      renderer:'svg',
+      loop: true,
+      autoplay: true,
+      path: '../asset/conferenceroomasaservicelotte.json'
+    });
+  </script>
+
 </html>
