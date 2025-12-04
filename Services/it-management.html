@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
 <link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 <script>
     tailwind.config = {
       darkMode: "class",
@@ -537,28 +538,13 @@
                   </a>
                 </div>
               </div>
-              <div
-                class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center"
-              >
-                <div
-                  class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center"
-                >
-                  <div
-                    class="absolute inset-0 bg-primary/10 dark:bg-primary/20 rounded-full animate-pulse"
-                  ></div>
-                  <div
-                    class="absolute inset-4 bg-primary/20 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"
-                  ></div>
-                  <span
-                    class="material-symbols-outlined text-primary text-[150px] md:text-[200px] relative z-10"
-                    style="
-                      font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0,
-                        'opsz' 48;
-                    "
-                    >lan</span
-                  >
+               <div class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center">
+                  <div class="relative w-[300px] h-[300px] md:w-[600px] md:h-[600px] flex items-center justify-center">
+                    <div class="absolute inset-0 bg-primary/10 dark:bg-primary/20 rounded-full animate-pulse"></div>
+                    <div class="absolute inset-4 bg-primary/20 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"></div>
+                    <div id="lottie-container"  class="w-[500px] px-10" style="font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 48"></div>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
         </section>
@@ -1144,4 +1130,17 @@
   </body>
   <!--JavaScipt-->
   <script src="../js/script.js"></script>
+
+  <!--Lottie Scripts-->
+  <script>
+    var animation = lottie.loadAnimation({
+
+      container: document.getElementById('lottie-container'), 
+      renderer:'svg',
+      loop: true,
+      autoplay: true,
+      path: '../asset/itmanagementlotte.json'
+    });
+  </script>
+
 </html>
