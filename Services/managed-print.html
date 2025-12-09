@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
 <link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 <script>
     tailwind.config = {
       darkMode: "class",
@@ -528,31 +529,11 @@
               </div>
             </div>
             <div class="flex justify-center items-center">
-              <div
-                class="relative w-64 h-64 md:w-80 md:h-80 bg-secondary/10 rounded-full flex items-center justify-center"
-              >
-                <span
-                  class="material-symbols-outlined text-secondary !text-9xl"
-                >
-                  print
-                </span>
-                <div
-                  class="absolute top-4 right-4 bg-primary/10 rounded-full p-3"
-                >
-                  <span
-                    class="material-symbols-outlined text-primary !text-4xl"
-                  >
-                    settings
-                  </span>
-                </div>
-                <div
-                  class="absolute bottom-4 left-4 bg-green-500/10 rounded-full p-3"
-                >
-                  <span
-                    class="material-symbols-outlined text-green-600 !text-4xl"
-                  >
-                    eco
-                  </span>
+              <div class="lg:col-span-6 lg:col-start-8 relative flex items-center justify-center">
+                <div class="relative w-[300px] h-[300px] md:w-[600px] md:h-[600px] flex items-center justify-center">
+                  <div class="absolute inset-0 bg-[#FF6B6B]/10 dark:bg-primary/20 rounded-full animate-pulse"></div>
+                  <div class="absolute inset-4 bg-[#FF6B6B]/60 dark:bg-primary/30 rounded-full animate-pulse [animation-delay:0.2s]"></div>
+                  <div id="lottie-container"  class="w-[500px] px-10" style="font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 48"></div>
                 </div>
               </div>
             </div>
@@ -573,7 +554,7 @@
                 control.
               </p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 scroll-item-right">
               <div
                 class="flex flex-col gap-3 rounded-xl border border-gray-200 bg-background-light p-6 text-center shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
@@ -1190,7 +1171,7 @@
               <!-- <div
                 class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -translate-y-1/2 hidden md:block"
               ></div> -->
-              <div class="relative grid grid-cols-1 md:grid-cols-4 gap-10">
+              <div class="relative grid grid-cols-1 md:grid-cols-4 gap-10 scroll-item">
                 <div class="flex flex-col items-center text-center">
                   <div
                     class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-2xl border-4 border-background-light z-10 font-display"
@@ -1553,4 +1534,16 @@
   </body>
   <!--JavaScipt-->
   <script src="../js/script.js"></script>
+
+    <!--Lottie Scripts-->
+  <script>
+    var animation = lottie.loadAnimation({
+
+      container: document.getElementById('lottie-container'), 
+      renderer:'svg',
+      loop: true,
+      autoplay: true,
+      path: '../asset/managedprintlotte.json'
+    });
+  </script>
 </html>
