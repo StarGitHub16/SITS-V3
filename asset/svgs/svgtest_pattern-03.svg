@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 920">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#luminosity-noclip-14);
+      }
+
+      .cls-2 {
+        mask: url(#mask-15);
+      }
+
+      .cls-3 {
+        mask: url(#mask-5);
+      }
+
+      .cls-4 {
+        mask: url(#mask-13);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-noclip-8);
+      }
+
+      .cls-6 {
+        mask: url(#mask-1);
+      }
+
+      .cls-7 {
+        filter: url(#luminosity-noclip-10);
+      }
+
+      .cls-8 {
+        filter: url(#luminosity-noclip-12);
+      }
+
+      .cls-9 {
+        mask: url(#mask-10);
+      }
+
+      .cls-10 {
+        mask: url(#mask-6);
+      }
+
+      .cls-11 {
+        mask: url(#mask-7);
+      }
+
+      .cls-12 {
+        filter: url(#luminosity-noclip-15);
+      }
+
+      .cls-13 {
+        filter: url(#luminosity-noclip-5);
+      }
+
+      .cls-14 {
+        mask: url(#mask);
+      }
+
+      .cls-15 {
+        filter: url(#luminosity-noclip-2);
+      }
+
+      .cls-16 {
+        fill: #e5e5e5;
+      }
+
+      .cls-17 {
+        mask: url(#mask-8);
+      }
+
+      .cls-18 {
+        filter: url(#luminosity-noclip-11);
+      }
+
+      .cls-19 {
+        mask: url(#mask-2);
+      }
+
+      .cls-20 {
+        filter: url(#luminosity-noclip-3);
+      }
+
+      .cls-21 {
+        mask: url(#mask-9);
+      }
+
+      .cls-22 {
+        filter: url(#luminosity-noclip-16);
+      }
+
+      .cls-23 {
+        fill: none;
+        stroke: #efefef;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-24 {
+        filter: url(#luminosity-noclip-17);
+      }
+
+      .cls-25 {
+        filter: url(#luminosity-noclip-13);
+      }
+
+      .cls-26 {
+        filter: url(#luminosity-noclip-9);
+      }
+
+      .cls-27 {
+        mask: url(#mask-16);
+      }
+
+      .cls-28 {
+        filter: url(#luminosity-noclip-6);
+      }
+
+      .cls-29 {
+        mask: url(#mask-11);
+      }
+
+      .cls-30 {
+        fill: #f4f4f4;
+      }
+
+      .cls-31 {
+        mask: url(#mask-12);
+      }
+
+      .cls-32 {
+        filter: url(#luminosity-noclip-4);
+      }
+
+      .cls-33 {
+        mask: url(#mask-4);
+      }
+
+      .cls-34 {
+        fill: #f8fafc;
+      }
+
+      .cls-35 {
+        mask: url(#mask-14);
+      }
+
+      .cls-36 {
+        filter: url(#luminosity-noclip-7);
+      }
+
+      .cls-37 {
+        mask: url(#mask-3);
+      }
+
+      .cls-38 {
+        filter: url(#luminosity-noclip);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="67.76" y="741.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="67.76" y="741.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-38">
+        <use transform="translate(67.76 741.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-2" x="271.76" y="562.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="271.76" y="562.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-15">
+        <use transform="translate(271.76 562.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-3" x="375.76" y="759.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-2" x="375.76" y="759.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-20">
+        <use transform="translate(375.76 759.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-4" x="550.76" y="722.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="550.76" y="722.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-32">
+        <use transform="translate(550.76 722.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-5" x="606.76" y="818.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-4" x="606.76" y="818.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-13">
+        <use transform="translate(606.76 818.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-6" x="626.76" y="762.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-5" x="626.76" y="762.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-28">
+        <use transform="translate(626.76 762.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-7" x="822.76" y="813.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-6" x="822.76" y="813.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-36">
+        <use transform="translate(822.76 813.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-8" x="883.76" y="713.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-7" x="883.76" y="713.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <use transform="translate(883.76 713.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-9" x="854.76" y="579.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-8" x="854.76" y="579.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-26">
+        <use transform="translate(854.76 579.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-10" x="756.76" y="672.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-9" x="756.76" y="672.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-7">
+        <use transform="translate(756.76 672.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-11" x="695.76" y="591.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-10" x="695.76" y="591.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-18">
+        <use transform="translate(695.76 591.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-12" x="606.37" y="416.53" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-11" x="606.37" y="416.53" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-8">
+        <image width="15" height="15" transform="translate(606.37 416.53)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAA9ElEQVQ4jcWTwWqFMBBFzyslEOMigmSRjeL//5LgStGArhxCXLyuXmhrpQsLnVUYZg537mTgZjyA553+t7sK3r8nvPdYa1FKAXAcB9u2MY7j74C2bem6jrqu0VoDEGMkhIBSimEYrgHee7quo2kanHMURQGAiOR3SumkJAOstdR1jXMO5xzGGAD2fc+geZ6vAUoptNYURYExhrIsc5ExBq119uVz/N0WjuMgxoiIZNmvEUSEGCMppWvAtm2EELJhLw9EhBACy7Kwrus1YBzHPKOIfFnjsiz0fc80TSfA6St776mqKsNSSqzr+mMz8Pj/W7gN+AD2HW6uSCXFzAAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-13" x="522.17" y="541.56" width="14" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-12" x="522.17" y="541.56" width="14" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-25">
+        <image width="14" height="15" transform="translate(522.17 541.56)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAACXBIWXMAAAsSAAALEgHS3X78AAAA8klEQVQokcWSsYqFMBBFz1uWQIyFgqRI8yT//0uClaIBrRxCLN5WBtwnW6wLO9UQ5kzu3Bm4EQ/g9Vv2487Pn98fnHNUVYVSCoB931nXlWEYfobbtsV7T9M0aK0BiDESQkApRd/317BzDu89z+cTay1FUQAgIjlPKZ0UZLiqKpqmwVqLtRZjDADbtuUm0zRdw0optNYURYExhrIsc5ExBq119uGIv3F733dijIhIlnrIFhFijKSUruF1XQkhZHOOmUWEEALzPLMsyzU8DEOeSUROq5rnma7rGMfxBL+dp3OOuq5zo5QSy7K8gcDj/277FvwFOmJurgYZI90AAAAASUVORK5CYII="/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-14" x="18.76" y="808.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-13" x="18.76" y="808.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-1">
+        <use transform="translate(18.76 808.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-15" x="26.76" y="647.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-14" x="26.76" y="647.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-12">
+        <use transform="translate(26.76 647.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-16" x="187.76" y="752.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-15" x="187.76" y="752.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-22">
+        <use transform="translate(187.76 752.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-17" x="224.76" y="813.62" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-16" x="224.76" y="813.62" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-24">
+        <use transform="translate(224.76 813.62)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <image id="image" width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAA9UlEQVQ4ja2SwWqFMBRET0sJxLiIIFlk88T//yXBlaIBXXkJcfG6qQHpk9La2SQk5DB3JnBTb1/r86+A97sOPl4deu+x1qKUAmDfd9Z1ZRiGnwFN09C2LXVdo7UGIMZICAGlFH3fXwO897Rty+PxwDlHURQAiEjep5ROTk4Aay11XeOcwzmHMQaAbdsyaJqma4BSCq01RVFgjKEsy3xnjEFrnXM59L8t7PtOjBERybaPEUSEGCMppWvAuq6EEHJgRwYiQgiBeZ5ZluUaMAxDnlFETjXO80zXdYzjeAK8/Mree6qqyrCUEsuyfHt8CfiNbrdwG/AJNzxuqzMcvXwAAAAASUVORK5CYII="/>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-34" width="1920" height="920"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <line class="cls-23" x1="529.17" y1="548.95" x2="426.72" y2="419.81"/>
+    <line class="cls-23" x1="34.41" y1="655.37" x2="5.93" y2="589.58"/>
+    <line class="cls-23" x1="26.59" y1="816.28" x2="6.12" y2="792.9"/>
+    <polygon class="cls-30" points="195.58 759.95 232.24 821.22 382.91 767.49 195.58 759.95"/>
+    <polygon class="cls-30" points="151.76 419.41 34.41 655.37 202.2 479.25 151.76 419.41"/>
+    <polygon class="cls-30" points="558.56 730.3 764.66 680.43 703.48 598.94 558.56 730.3"/>
+    <polygon class="cls-30" points="949.8 792.51 830.7 821.22 891.07 720.98 949.82 792.04 949.8 792.51"/>
+    <polygon class="cls-30" points="852.1 436.21 862.41 586.91 770.38 525.69 852.1 436.21"/>
+    <line class="cls-23" x1="34.41" y1="655.37" x2="258.59" y2="419.41"/>
+    <line class="cls-23" x1="75.64" y1="748.72" x2="5.93" y2="711.7"/>
+    <polyline class="cls-23" points="195.58 759.95 278.87 570.19 34.41 655.37 195.58 759.95 26.59 816.28 75.64 748.72 6.14 756.8"/>
+    <polyline class="cls-23" points="151.76 419.41 34.41 655.37 75.64 748.72 195.58 759.95 232.24 821.22 382.91 767.49 195.58 759.95"/>
+    <polyline class="cls-23" points="151.76 419.41 278.87 570.19 382.91 767.49"/>
+    <line class="cls-23" x1="278.87" y1="570.19" x2="529.17" y2="548.95"/>
+    <polyline class="cls-23" points="382.91 767.49 558.56 730.3 633.94 769.83 614.08 826.16 558.56 730.3 703.48 598.94 382.91 767.49 633.94 393.96"/>
+    <polyline class="cls-23" points="30.65 403.35 703.48 598.94 764.66 680.43 558.56 730.3"/>
+    <polygon class="cls-23" points="830.7 821.22 891.07 720.98 950.14 792.43 830.7 821.22"/>
+    <polyline class="cls-23" points="633.94 769.83 764.66 680.43 891.07 720.98 633.94 769.83 830.7 821.22 614.08 826.16"/>
+    <polyline class="cls-23" points="764.66 680.43 862.41 586.91 703.48 598.94 568.93 342.43"/>
+    <line class="cls-23" x1="703.48" y1="598.94" x2="867.9" y2="418.92"/>
+    <polyline class="cls-23" points="548.74 383 862.41 586.91 891.07 720.98"/>
+    <polyline class="cls-23" points="958.83 788.39 862.41 586.91 846.97 367.4"/>
+    <line class="cls-23" x1="862.41" y1="586.91" x2="1033.96" y2="640.88"/>
+    <g class="cls-14">
+      <circle class="cls-16" cx="75.64" cy="748.72" r="4.94"/>
+    </g>
+    <g class="cls-6">
+      <circle class="cls-16" cx="278.87" cy="570.19" r="4.94"/>
+    </g>
+    <g class="cls-19">
+      <circle class="cls-16" cx="382.91" cy="767.49" r="4.94"/>
+    </g>
+    <g class="cls-37">
+      <circle class="cls-16" cx="558.56" cy="730.3" r="4.94"/>
+    </g>
+    <g class="cls-33">
+      <circle class="cls-16" cx="614.08" cy="826.16" r="4.94"/>
+    </g>
+    <g class="cls-3">
+      <circle class="cls-16" cx="633.94" cy="769.83" r="4.94"/>
+    </g>
+    <g class="cls-10">
+      <circle class="cls-16" cx="830.7" cy="821.22" r="4.94"/>
+    </g>
+    <g class="cls-11">
+      <circle class="cls-16" cx="891.07" cy="720.98" r="4.94"/>
+    </g>
+    <g class="cls-17">
+      <circle class="cls-16" cx="862.41" cy="586.91" r="4.94"/>
+    </g>
+    <g class="cls-21">
+      <circle class="cls-16" cx="764.66" cy="680.43" r="4.94"/>
+    </g>
+    <g class="cls-9">
+      <circle class="cls-16" cx="703.48" cy="598.94" r="4.94"/>
+    </g>
+    <g class="cls-29">
+      <circle class="cls-16" cx="614.08" cy="423.86" r="4.94"/>
+    </g>
+    <g class="cls-31">
+      <circle class="cls-16" cx="529.17" cy="548.95" r="4.94"/>
+    </g>
+    <g class="cls-4">
+      <circle class="cls-16" cx="26.59" cy="816.28" r="4.94"/>
+    </g>
+    <g class="cls-35">
+      <circle class="cls-16" cx="34.41" cy="655.37" r="4.94"/>
+    </g>
+    <g class="cls-2">
+      <circle class="cls-16" cx="195.58" cy="759.95" r="4.94"/>
+    </g>
+    <g class="cls-27">
+      <circle class="cls-16" cx="232.24" cy="821.22" r="4.94"/>
+    </g>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <path class="cls-30" d="M1920,763.29s-378.03-275.43-952.27,0c-574.24,275.43-967.73,0-967.73,0v156.71h1920v-156.71Z"/>
+  </g>
+</svg>

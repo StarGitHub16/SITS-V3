@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 920">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#luminosity-noclip-14);
+      }
+
+      .cls-2 {
+        mask: url(#mask-15);
+      }
+
+      .cls-3 {
+        mask: url(#mask-5);
+      }
+
+      .cls-4 {
+        mask: url(#mask-13);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-noclip-8);
+      }
+
+      .cls-6 {
+        mask: url(#mask-1);
+      }
+
+      .cls-7 {
+        filter: url(#luminosity-noclip-10);
+      }
+
+      .cls-8 {
+        filter: url(#luminosity-noclip-12);
+      }
+
+      .cls-9 {
+        mask: url(#mask-10);
+      }
+
+      .cls-10 {
+        mask: url(#mask-6);
+      }
+
+      .cls-11 {
+        mask: url(#mask-7);
+      }
+
+      .cls-12 {
+        filter: url(#luminosity-noclip-15);
+      }
+
+      .cls-13 {
+        filter: url(#luminosity-noclip-5);
+      }
+
+      .cls-14 {
+        mask: url(#mask);
+      }
+
+      .cls-15 {
+        filter: url(#luminosity-noclip-2);
+      }
+
+      .cls-16 {
+        fill: #e5e5e5;
+      }
+
+      .cls-17 {
+        mask: url(#mask-8);
+      }
+
+      .cls-18 {
+        filter: url(#luminosity-noclip-11);
+      }
+
+      .cls-19 {
+        mask: url(#mask-2);
+      }
+
+      .cls-20 {
+        filter: url(#luminosity-noclip-3);
+      }
+
+      .cls-21 {
+        mask: url(#mask-9);
+      }
+
+      .cls-22 {
+        filter: url(#luminosity-noclip-16);
+      }
+
+      .cls-23 {
+        fill: none;
+        stroke: #efefef;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-24 {
+        filter: url(#luminosity-noclip-17);
+      }
+
+      .cls-25 {
+        filter: url(#luminosity-noclip-13);
+      }
+
+      .cls-26 {
+        filter: url(#luminosity-noclip-9);
+      }
+
+      .cls-27 {
+        mask: url(#mask-16);
+      }
+
+      .cls-28 {
+        filter: url(#luminosity-noclip-6);
+      }
+
+      .cls-29 {
+        mask: url(#mask-11);
+      }
+
+      .cls-30 {
+        fill: #f4f4f4;
+      }
+
+      .cls-31 {
+        mask: url(#mask-12);
+      }
+
+      .cls-32 {
+        filter: url(#luminosity-noclip-4);
+      }
+
+      .cls-33 {
+        mask: url(#mask-4);
+      }
+
+      .cls-34 {
+        fill: #f8fafc;
+      }
+
+      .cls-35 {
+        mask: url(#mask-14);
+      }
+
+      .cls-36 {
+        filter: url(#luminosity-noclip-7);
+      }
+
+      .cls-37 {
+        mask: url(#mask-3);
+      }
+
+      .cls-38 {
+        filter: url(#luminosity-noclip);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="1825.8" y="161.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="1825.8" y="161.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-38">
+        <use transform="translate(1825.8 161.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-2" x="1622.8" y="340.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="1622.8" y="340.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-15">
+        <use transform="translate(1622.8 340.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-3" x="1518.8" y="142.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-2" x="1518.8" y="142.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-20">
+        <use transform="translate(1518.8 142.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-4" x="1342.8" y="180.21" width="15" height="14" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="1342.8" y="180.21" width="15" height="14" maskUnits="userSpaceOnUse">
+      <g class="cls-32">
+        <use transform="translate(1342.8 180.21)" xlink:href="#image-2"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-5" x="1287.8" y="84.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-4" x="1287.8" y="84.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-13">
+        <use transform="translate(1287.8 84.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-6" x="1267.8" y="140.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-5" x="1267.8" y="140.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-28">
+        <use transform="translate(1267.8 140.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-7" x="1070.8" y="89.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-6" x="1070.8" y="89.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-36">
+        <use transform="translate(1070.8 89.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-8" x="1010.8" y="189.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-7" x="1010.8" y="189.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <use transform="translate(1010.8 189.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-9" x="1038.8" y="323.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-8" x="1038.8" y="323.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-26">
+        <use transform="translate(1038.8 323.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-10" x="1136.8" y="229.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-9" x="1136.8" y="229.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-7">
+        <use transform="translate(1136.8 229.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-11" x="1197.8" y="311.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-10" x="1197.8" y="311.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-18">
+        <use transform="translate(1197.8 311.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-12" x="1287.8" y="486.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-11" x="1287.8" y="486.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-8">
+        <use transform="translate(1287.8 486.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-13" x="1372.8" y="361.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-12" x="1372.8" y="361.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-25">
+        <use transform="translate(1372.8 361.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-14" x="1874.8" y="94.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-13" x="1874.8" y="94.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-1">
+        <use transform="translate(1874.8 94.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-15" x="1866.8" y="255.21" width="15" height="14" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-14" x="1866.8" y="255.21" width="15" height="14" maskUnits="userSpaceOnUse">
+      <g class="cls-12">
+        <use transform="translate(1866.8 255.21)" xlink:href="#image-2"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-16" x="1705.8" y="150.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-15" x="1705.8" y="150.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-22">
+        <use transform="translate(1705.8 150.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <filter id="luminosity-noclip-17" x="1669.8" y="89.21" width="15" height="15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-16" x="1669.8" y="89.21" width="15" height="15" maskUnits="userSpaceOnUse">
+      <g class="cls-24">
+        <use transform="translate(1669.8 89.21)" xlink:href="#image"/>
+      </g>
+    </mask>
+    <image id="image" width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAA+ElEQVQ4ja2SwWqFMBBFzyslEONCQbLIRvH/f0lwpWhAVw4hLl4XrQFppfTZu0mYMIeZe/PgU09e1NurjYfefyo65yiKAqUUAPu+s64rwzD8DmiahrZtqaoKrTUAIQS89yil6Pv+GuCco21b6rrGWkuWZQCISLrHGE+TnABFUVBVFdZarLUYYwDYti2Bpmm6Biil0FqTZRnGGPI8T2/GGLTWyZdD/5vCvu+EEBCRNPaxgogQQiDGeA1Y1xXvfTLs8EBE8N4zzzPLslwDhmFIO4rIKcZ5num6jnEcT4DH13n6ys45yrJMsBgjy7J8a74E/EW3U7gNuK0PUgpuq1I3XuUAAAAASUVORK5CYII="/>
+    <image id="image-2" width="15" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsSAAALEgHS3X78AAAA90lEQVQoka2SQWuEMBCFvy0lEOMhguSQy4r//y8JnhQN6MkhxMP20BqQVkp3+y4JE+Zj5r3c+NSDJ/X2bOOh95+K3nustSilANj3nXVdGYbhd0DTNLRtS13XaK0BiDESQkApRd/31wDvPW3bcr/fcc5RFAUAIpLvKaXTJCeAtZa6rnHO4ZzDGAPAtm0ZNE3TNUAphdaaoigwxlCWZX4zxqC1zr4c+t8U9n0nxoiI5LGPFUSEGCMppWvAuq6EELJhhwciQgiBeZ5ZluUaMAxD3lFETjHO80zXdYzjeALcvs7TV/beU1VVhqWUWJblW/Ml4C96OYWX9QE2eW6p4N4FvAAAAABJRU5ErkJggg=="/>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-34" width="1920" height="920"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <line class="cls-23" x1="1379.94" y1="368.61" x2="1482.39" y2="497.75"/>
+    <line class="cls-23" x1="1874.7" y1="262.19" x2="1903.18" y2="327.98"/>
+    <line class="cls-23" x1="1882.52" y1="101.28" x2="1902.99" y2="124.65"/>
+    <polygon class="cls-30" points="1713.53 157.61 1676.87 96.34 1526.2 150.06 1713.53 157.61"/>
+    <polygon class="cls-30" points="1757.35 498.15 1874.7 262.19 1706.91 438.31 1757.35 498.15"/>
+    <polygon class="cls-30" points="1350.55 187.26 1144.45 237.12 1205.64 318.61 1350.55 187.26"/>
+    <polygon class="cls-30" points="959.31 125.04 1078.42 96.34 1018.04 196.58 959.29 125.51 959.31 125.04"/>
+    <polygon class="cls-30" points="1057.01 481.34 1046.7 330.65 1138.73 391.87 1057.01 481.34"/>
+    <line class="cls-23" x1="1874.7" y1="262.19" x2="1650.52" y2="498.15"/>
+    <line class="cls-23" x1="1833.47" y1="168.84" x2="1903.18" y2="205.86"/>
+    <polyline class="cls-23" points="1713.53 157.61 1630.24 347.36 1874.7 262.19 1713.53 157.61 1882.52 101.28 1833.47 168.84 1902.97 160.76"/>
+    <polyline class="cls-23" points="1757.35 498.15 1874.7 262.19 1833.47 168.84 1713.53 157.61 1676.87 96.34 1526.2 150.06 1713.53 157.61"/>
+    <polyline class="cls-23" points="1757.35 498.15 1630.24 347.36 1526.2 150.06"/>
+    <line class="cls-23" x1="1630.24" y1="347.36" x2="1379.94" y2="368.61"/>
+    <polyline class="cls-23" points="1526.2 150.06 1350.55 187.26 1275.17 147.73 1295.03 91.39 1350.55 187.26 1205.64 318.61 1526.2 150.06 1275.17 523.6"/>
+    <polyline class="cls-23" points="1878.46 514.21 1205.64 318.61 1144.45 237.12 1350.55 187.26"/>
+    <polygon class="cls-23" points="1078.42 96.34 1018.04 196.58 958.97 125.13 1078.42 96.34"/>
+    <polyline class="cls-23" points="1275.17 147.73 1144.45 237.12 1018.04 196.58 1275.17 147.73 1078.42 96.34 1295.03 91.39"/>
+    <polyline class="cls-23" points="1144.45 237.12 1046.7 330.65 1205.64 318.61 1340.18 575.13"/>
+    <line class="cls-23" x1="1205.64" y1="318.61" x2="1041.21" y2="498.64"/>
+    <polyline class="cls-23" points="1360.37 534.56 1046.7 330.65 1018.04 196.58"/>
+    <polyline class="cls-23" points="950.28 129.16 1046.7 330.65 1062.14 550.16"/>
+    <line class="cls-23" x1="1046.7" y1="330.65" x2="875.15" y2="276.67"/>
+    <g class="cls-14">
+      <circle class="cls-16" cx="1833.47" cy="168.84" r="4.94"/>
+    </g>
+    <g class="cls-6">
+      <circle class="cls-16" cx="1630.24" cy="347.36" r="4.94"/>
+    </g>
+    <g class="cls-19">
+      <circle class="cls-16" cx="1526.2" cy="150.06" r="4.94"/>
+    </g>
+    <g class="cls-37">
+      <circle class="cls-16" cx="1350.55" cy="187.26" r="4.94"/>
+    </g>
+    <g class="cls-33">
+      <circle class="cls-16" cx="1295.03" cy="91.39" r="4.94"/>
+    </g>
+    <g class="cls-3">
+      <circle class="cls-16" cx="1275.17" cy="147.73" r="4.94"/>
+    </g>
+    <g class="cls-10">
+      <circle class="cls-16" cx="1078.42" cy="96.34" r="4.94"/>
+    </g>
+    <g class="cls-11">
+      <circle class="cls-16" cx="1018.04" cy="196.58" r="4.94"/>
+    </g>
+    <g class="cls-17">
+      <circle class="cls-16" cx="1046.7" cy="330.65" r="4.94"/>
+    </g>
+    <g class="cls-21">
+      <circle class="cls-16" cx="1144.45" cy="237.12" r="4.94"/>
+    </g>
+    <g class="cls-9">
+      <circle class="cls-16" cx="1205.64" cy="318.61" r="4.94"/>
+    </g>
+    <g class="cls-29">
+      <circle class="cls-16" cx="1295.03" cy="493.7" r="4.94"/>
+    </g>
+    <g class="cls-31">
+      <circle class="cls-16" cx="1379.94" cy="368.61" r="4.94"/>
+    </g>
+    <g class="cls-4">
+      <circle class="cls-16" cx="1882.52" cy="101.28" r="4.94"/>
+    </g>
+    <g class="cls-35">
+      <circle class="cls-16" cx="1874.7" cy="262.19" r="4.94"/>
+    </g>
+    <g class="cls-2">
+      <circle class="cls-16" cx="1713.53" cy="157.61" r="4.94"/>
+    </g>
+    <g class="cls-27">
+      <circle class="cls-16" cx="1676.87" cy="96.34" r="4.94"/>
+    </g>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <path class="cls-30" d="M0,156.39s378.03,275.43,952.27,0c574.24-275.43,967.73,0,967.73,0V-.32H0v156.71Z"/>
+  </g>
+</svg>
