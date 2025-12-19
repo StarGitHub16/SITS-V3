@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Co-Managed IT - Summit IT Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Orbitron:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#BF2026",
+            accent: {
+              DEFAULT: "#bf2026",
+            },
+            "background-light": "#FEFEFE",
+            "background-dark": "#18181B",
+            "surface-light": "#EEEEEE",
+            "surface-dark": "#27272A",
+          },
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            display: ["Orbitron", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans hero-bg-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased">
+  <div class="relative min-h-screen" x-data="{ isMenuOpen: false }">
+   
+    <header class="sticky top-0 z-50 bg-background-light/60 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+      <div class="container mx-auto px-4 py-4 md:py-8 flex justify-between items-center">
+
+        <a class="flex items-center space-x-3" href="../index.html">
+          <img alt="Summit IT Solutions Logo" class="w-200 h-28" src="../asset/SITS logo.png"/>
+        </a>
+  
+
+
+
+<nav class="hidden xl:flex items-center space-x-8">
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Our Services</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="./managed-cybersecurity.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Cybersecurity</a>
+        <a href="./penetration-testing.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Penetration Testing</a>
+        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Support</a>
+        <a href="./it-management.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Management</a>
+
+        <a href="./co-managed-it.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Co-Managed IT</a>
+        <a href="./bdr.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Backup & Recovery</a>
+        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Communications (VoIP)</a>
+        <a href="./conference-service.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Room as a Service</a>
+        <a href="./compliance.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Compliance</a>
+        <a href="./managed-print.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Print Services</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">New Office Setup</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"> 
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Hardware</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Phones</a>
+        <a href="#team" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Networking Equipment</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Cameras</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Door Access Control</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Rooms</a>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display md:text-[1.2rem]">Industries</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#managed-cybersecurity" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Law Firms</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Accounting</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Financial Services</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Healthcare & Dental</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Veterinary Clinics</a>
+
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Service Business</a>
+        <a href="#cloud-services" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Retail</a>
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Manufacturing</a>
+        
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent   dark:hover:bg-slate-700 font-display">Golf Clubs & Hospitality</a>
+
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Real Estate</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">About Us</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Why Summit?</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Careers</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Resources</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#latest-posts" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Blog Center</a>
+      </div>
+    </div>
+  </div>
+   
+</nav>
+        <button class="hidden xl:block bg-accent text-white text-md font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity font-display">
+            Get a Free Consultation
+        </button>
+        <button @click="isMenuOpen = true" class="xl:hidden text-slate-800 dark:text-slate-200">
+          <span class="material-symbols-outlined w-100 h-100">menu</span>
+        </button>
+  </div>
+</header>
+
+ <!--Mobile Navigation-->
+      <div
+        x-show="isMenuOpen"
+        @click="isMenuOpen = false"
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 z-40 bg-black bg-opacity-50 xl:hidden"
+      ></div>
+
+      <div
+        x-show="isMenuOpen"
+        x-transition:enter="transition ease-in-out duration-300 transform"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in-out duration-300 transform"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed top-0 right-0 w-full h-full bg-[linear-gradient(180deg,var(--tw-gradient-stops))] from-neutral-100 to-neutral-400 dark:bg-background-dark shadow-xl z-50 xl:hidden overflow-y-auto"
+      >
+        <div
+          class="p-4 border-b border-slate-200 dark:border-slate-700 flex justify-end"
+        >
+          <button
+            @click="isMenuOpen = false"
+            class="text-slate-800 dark:text-slate-200"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+
+        <div class="flex flex-col space-y-2 p-4">
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Our Services
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#managed-cybersecurity"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 text-center hover:text-accent dark:hover:text-accent py-1 font-display"
+                >Managed Cybersecurity</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Penetration Testing</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >IT Support</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >IT Management</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Co-Managed IT</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Backup & Recovery</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Business Communications (VoIP)</a
+              >
+              <a
+                href="#cloud-services"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Conference Room as a Service</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Compliance</a
+              >
+
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Managed Print Services</a
+              >
+
+
+                <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >New Office Setup</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Hardware
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#about-us"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Business Phones</a
+              >
+              <a
+                href="#team"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Networking Equipment</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Cameras</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Door Access Control</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Conference Rooms</a
+              >
+            
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Industries
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#managed-cybersecurity"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Law Firms</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Accounting</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Financial Services</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Healthcare & Dental</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Veterinary Clinics</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Service Business</a
+              >
+              <a
+                href="#cloud-services"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Retail</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Manufacturing</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Golf Clubs & Hospitality</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Real Estate</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              About Us
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#about-us"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Why Summit?</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Careers</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Resources
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#latest-posts"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Blog Center</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="mt-4 bg-accent text-white font-medium py-2 px-4 rounded-lg text-center hover:opacity-90 transition-opacity font-display text-sm"
+          >
+            Get a Free Consultation
+          </a>
+        </div>
+      </div>
+
+      <section class="relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+            <div class="flex flex-col gap-6 order-2 lg:order-1">
+              <div class="flex items-center gap-2">
+                <span class="h-px w-8 bg-primary"></span>
+                <span
+                  class="font-display text-sm font-bold uppercase tracking-wider text-primary"
+                  >Co-Managed IT</span
+                >
+              </div>
+              <h1
+                class="font-display text-4xl font-black leading-tight tracking-tight text-text-main dark:text-white sm:text-5xl xl:text-6xl"
+              >
+                Empower Your Internal Team with
+                <span class="text-primary">Collaborative IT</span>
+              </h1>
+              <p
+                class="text-lg leading-relaxed text-text-muted dark:text-gray-300 max-w-xl"
+              >
+                Bridge the gap between your current capacity and your business
+                goals. We handle the noise, the tickets, and the maintenance;
+                you handle the strategy.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-4">
+                <a
+                  class="flex h-12 min-w-[160px] items-center justify-center rounded bg-primary px-6 text-base font-bold text-white transition-all hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/20"
+                  href="#"
+                >
+                  Get a Consultation
+                </a>
+                <a
+                  class="flex h-12 min-w-[160px] items-center justify-center rounded border border-gray-300 bg-transparent px-6 text-base font-bold text-text-main transition-colors hover:border-primary hover:text-primary dark:border-gray-600 dark:text-white dark:hover:border-primary"
+                  href="#"
+                >
+                  View Pricing
+                </a>
+              </div>
+              <div class="mt-8 flex items-center gap-4 text-sm text-text-muted">
+                <div class="flex -space-x-2">
+                  <img
+                    alt="Client Avatar 1"
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-900"
+                    data-alt="Portrait of a smiling woman"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBms4kNtg9l9FVL-yIcG6j0uVSo-9h1SvgpzbzizquSlVK4hNAzWYJmwF-qPPxhi4iRYyEB-OYfXVZFwTZV4q6Xx6loh99oF48MyZSZo8dpri6JqdzIclnLlQOG58QdQXwn75T-eNuMKPGLS9CWB3Dp8X4VvMHBKr3LTK2KYXvHoh_wlmfdTq2an_svvL8JrsovMk_jm9kuUnCEjmkq7tCR8HN4DHusq__7JCYrZQPPTBPrKNOion4Z0V1xfUkjHs3u70s_e7ZqCi4"
+                  />
+                  <img
+                    alt="Client Avatar 2"
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-900"
+                    data-alt="Portrait of a serious man"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuACmPfpqvfQNVrB4vY7CYYF2Lb99qnE3SFqHlVjqs5a5yex0hdntMlpeYn6uim2UIrJvR1AnYEcEzf47liDxeeIaiITUjRl_TiSZVduVv1rYo7WI1yFu3dyHVyHVvWSGfxqqj9V8fHtDnxWxrtu7gRVBM3xG_PY00cjPeICW52bvC0xnuA1JnkjPSZRYCfyr4RA7sl4jvrTJj2Zqnx0rh_P1-OOOkHo6J6E4R7tDELk8h9aPYb2rJgNDCO16JLYDztGYxDC3mRYEOU"
+                  />
+                  <img
+                    alt="Client Avatar 3"
+                    class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-900"
+                    data-alt="Portrait of a smiling man"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA86CnYe_X6dv9kpvlKzZ398Z9nFZ7OcC7IatzOse42iJCvz0Qm5IwJCC28oHYcPfhAhTMVNHX9WiA2pGooDN6xEFJcmHjJFLz_Qb1RY7X2vnBABk0rH8BMHfVvPOp0emtuUJOtgmE8NaoBR9h8dcPBhUtvrmM-YVLZp6y-Rf3YqxCAmNI4uZq84qRpizdozlcB9CdUs_5X01smupoh9C3ho9pK39KSo8Sd5gRMDANr9hgIsAjD6LeVZvFdnczITWhQ5mOgARyjDpw"
+                  />
+                </div>
+                <p>Trusted by 500+ IT Leaders</p>
+              </div>
+            </div>
+            <div class="relative order-1 lg:order-2">
+              <div
+                class="absolute -inset-4 rounded-xl bg-gradient-to-tr from-primary/20 to-gray-200 blur-2xl dark:from-primary/10 dark:to-gray-800"
+              ></div>
+              <div
+                class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-gray-100 shadow-2xl dark:bg-gray-800"
+              >
+                <div
+                  class="h-full w-full bg-cover bg-center"
+                  data-alt="Two IT professionals discussing data on a computer screen"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsCK6s3gW_L91LTpbrBUCuVqpwI4mAQd-_af4amTh3V1Dqtq6-S_28E-rbwHN5y2PZStet1QUXHDPyLLy-asnLrEuZBroRLvri95x5mAtyu55IjP8en6vRcBskPV8cscBY6bGQKazMvGfyVGpcZjE9F_7dQYVTkoKeTORzMGIOdY7A23QyQSajELApmm8M4hiHhQgPZU9vdhKvsmd28D_a3alrCid01nW9x5TwcQhVVjbrF67JhbmBC1kespOdnK6bTfffY4zfuWQ');
+                  "
+                ></div>
+                <div
+                  class="absolute bottom-6 left-6 max-w-xs rounded-lg bg-white/90 p-4 shadow-lg backdrop-blur dark:bg-gray-900/90 border-l-4 border-primary"
+                >
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-green-600"
+                      >check_circle</span
+                    >
+                    <div>
+                      <p
+                        class="font-display text-sm font-bold text-text-main dark:text-white"
+                      >
+                        Seamless Integration
+                      </p>
+                      <p class="text-xs text-text-muted">
+                        Works with your existing tools
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-background-subtle py-20 dark:bg-gray-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-16 md:text-center max-w-3xl mx-auto">
+            <h2
+              class="font-display text-3xl font-bold tracking-tight text-text-main dark:text-white sm:text-4xl"
+            >
+              Overwhelmed Internal Teams? <br />
+              <span class="text-primary">We Help, We Don't Replace.</span>
+            </h2>
+            <p class="mt-4 text-lg text-text-muted dark:text-gray-400">
+              Gain the benefits of a full enterprise IT department without the
+              overhead of hiring multiple specialists.
+            </p>
+          </div>
+          <div class="grid gap-8 md:grid-cols-3">
+            <div
+              class="group relative overflow-hidden rounded-lg bg-white p-8 shadow-sm transition-all hover:shadow-md dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+            >
+              <div
+                class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined">trending_up</span>
+              </div>
+              <h3
+                class="font-display mb-3 text-xl font-bold text-text-main dark:text-white"
+              >
+                Instant Scalability
+              </h3>
+              <p class="text-text-muted dark:text-gray-400">
+                Scale your IT operations up or down instantly based on project
+                demands without the HR headaches.
+              </p>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-white p-8 shadow-sm transition-all hover:shadow-md dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+            >
+              <div
+                class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined">savings</span>
+              </div>
+              <h3
+                class="font-display mb-3 text-xl font-bold text-text-main dark:text-white"
+              >
+                Cost Efficiency
+              </h3>
+              <p class="text-text-muted dark:text-gray-400">
+                Reduce overhead costs compared to hiring full-time Tier 3
+                engineers for specialized tasks.
+              </p>
+            </div>
+            <div
+              class="group relative overflow-hidden rounded-lg bg-white p-8 shadow-sm transition-all hover:shadow-md dark:bg-gray-800 border border-gray-100 dark:border-gray-700"
+            >
+              <div
+                class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <h3
+                class="font-display mb-3 text-xl font-bold text-text-main dark:text-white"
+              >
+                Access to Expertise
+              </h3>
+              <p class="text-text-muted dark:text-gray-400">
+                Tap into a deep pool of cybersecurity and infrastructure experts
+                immediately when problems escalate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 relative overflow-hidden bg-background-light dark:bg-background-dark"
+        id="scope-section"
+      >
+        <div class="absolute inset-0 opacity-5 pointer-events-none">
+          <div class="absolute left-1/3 top-0 bottom-0 w-px bg-primary"></div>
+          <div
+            class="absolute right-1/4 top-0 bottom-0 w-px bg-primary dashed"
+          ></div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="flex flex-col lg:flex-row gap-16">
+            <div class="lg:w-1/3 lg:sticky lg:top-32 lg:self-start">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="h-1 w-8 bg-primary"></span>
+                <span
+                  class="font-display text-sm font-bold uppercase tracking-wider text-primary"
+                  >Our Capabilities</span
+                >
+              </div>
+              <h2
+                class="font-display text-4xl font-black text-text-main dark:text-white sm:text-5xl leading-tight mb-6"
+              >
+                Scope of <br />
+                <span class="text-primary">Co-Managed Services</span>
+              </h2>
+              <p class="text-lg text-text-muted dark:text-gray-400 mb-8">
+                A modular approach to IT support. Select the specific functions
+                you need to augment your team's capabilities without the
+                friction of a full takeover.
+              </p>
+              <div class="hidden lg:block">
+                <a
+                  class="inline-flex items-center justify-center gap-2 rounded bg-text-main dark:bg-white text-white dark:text-black px-6 py-3 text-sm font-bold transition-transform hover:-translate-y-1"
+                  href="#"
+                >
+                  Download Full Catalog
+                  <span class="material-symbols-outlined text-lg"
+                    >download</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div class="lg:w-2/3 flex flex-col gap-12">
+              <div class="group flex gap-6 md:gap-8 items-start relative">
+                <div class="flex-shrink-0 relative">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-display font-bold text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300"
+                  >
+                    01
+                  </div>
+                  <div
+                    class="absolute top-12 left-1/2 -translate-x-1/2 w-px h-[calc(100%+3rem)] bg-gray-200 dark:bg-gray-800 last:hidden"
+                  ></div>
+                </div>
+                <div
+                  class="pb-8 border-b border-gray-100 dark:border-gray-800 w-full group-last:border-0"
+                >
+                  <h3
+                    class="font-display text-2xl font-bold text-text-main dark:text-white mb-3 flex items-center gap-3"
+                  >
+                    Strategic vCIO &amp; Planning
+                    <span
+                      class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"
+                      >arrow_right_alt</span
+                    >
+                  </h3>
+                  <p
+                    class="text-text-muted dark:text-gray-300 text-lg leading-relaxed mb-4"
+                  >
+                    Unlock executive-level technology planning without hiring a
+                    full-time CIO. We assist with annual budgeting, technology
+                    roadmapping, and aligning IT investments.
+                  </p>
+                  <div
+                    class="flex flex-wrap gap-4 text-sm font-medium text-text-muted dark:text-gray-400"
+                  >
+                    <span class="flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      QBRs
+                    </span>
+                    <span class="flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Disaster Recovery
+                    </span>
+                    <span class="flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Compliance
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="group flex gap-6 md:gap-8 items-start relative">
+                <div class="flex-shrink-0 relative">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-display font-bold text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300"
+                  >
+                    02
+                  </div>
+                  <div
+                    class="absolute top-12 left-1/2 -translate-x-1/2 w-px h-[calc(100%+3rem)] bg-gray-200 dark:bg-gray-800"
+                  ></div>
+                </div>
+                <div
+                  class="pb-8 border-b border-gray-100 dark:border-gray-800 w-full"
+                >
+                  <h3
+                    class="font-display text-2xl font-bold text-text-main dark:text-white mb-3 flex items-center gap-3"
+                  >
+                    Help Desk Overflow
+                    <span
+                      class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"
+                      >arrow_right_alt</span
+                    >
+                  </h3>
+                  <p
+                    class="text-text-muted dark:text-gray-300 text-lg leading-relaxed mb-4"
+                  >
+                    Let us handle Level 1 tickets while your team focuses on
+                    high-value projects. We act as a seamless extension of your
+                    support desk.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 border border-gray-200 dark:border-gray-700 rounded text-xs font-bold uppercase tracking-wider text-text-muted"
+                      >Ticket Escalation</span
+                    >
+                    <span
+                      class="px-3 py-1 border border-gray-200 dark:border-gray-700 rounded text-xs font-bold uppercase tracking-wider text-text-muted"
+                      >24/7 Support</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="group flex gap-6 md:gap-8 items-start relative">
+                <div class="flex-shrink-0 relative">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-display font-bold text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300"
+                  >
+                    03
+                  </div>
+                  <div
+                    class="absolute top-12 left-1/2 -translate-x-1/2 w-px h-[calc(100%+3rem)] bg-gray-200 dark:bg-gray-800"
+                  ></div>
+                </div>
+                <div
+                  class="pb-8 border-b border-gray-100 dark:border-gray-800 w-full"
+                >
+                  <h3
+                    class="font-display text-2xl font-bold text-text-main dark:text-white mb-3 flex items-center gap-3"
+                  >
+                    Cybersecurity Monitoring
+                    <span
+                      class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"
+                      >arrow_right_alt</span
+                    >
+                  </h3>
+                  <p
+                    class="text-text-muted dark:text-gray-300 text-lg leading-relaxed mb-4"
+                  >
+                    Continuous 24/7 SOC monitoring, active threat hunting, and
+                    rapid incident response support to secure your
+                    infrastructure.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 border border-gray-200 dark:border-gray-700 rounded text-xs font-bold uppercase tracking-wider text-text-muted"
+                      >MDR &amp; EDR</span
+                    >
+                    <span
+                      class="px-3 py-1 border border-gray-200 dark:border-gray-700 rounded text-xs font-bold uppercase tracking-wider text-text-muted"
+                      >Vuln Scans</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="group flex gap-6 md:gap-8 items-start relative">
+                <div class="flex-shrink-0 relative">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-display font-bold text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-300"
+                  >
+                    04
+                  </div>
+                </div>
+                <div class="pb-8 w-full">
+                  <h3
+                    class="font-display text-2xl font-bold text-text-main dark:text-white mb-3 flex items-center gap-3"
+                  >
+                    Infrastructure Management
+                    <span
+                      class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"
+                      >arrow_right_alt</span
+                    >
+                  </h3>
+                  <p
+                    class="text-text-muted dark:text-gray-300 text-lg leading-relaxed mb-4"
+                  >
+                    We handle the heavy lifting in the background—patch
+                    management, backups, server health checks, and routine
+                    maintenance.
+                  </p>
+                  <a
+                    class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all"
+                    href="#"
+                  >
+                    View Maintenance Schedule
+                  </a>
+                </div>
+              </div>
+              <div class="block lg:hidden mt-4">
+                <a
+                  class="w-full inline-flex items-center justify-center gap-2 rounded bg-text-main dark:bg-white text-white dark:text-black px-6 py-3 text-sm font-bold"
+                  href="#"
+                >
+                  Download Full Catalog
+                  <span class="material-symbols-outlined text-lg"
+                    >download</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray-900 text-white py-20 relative overflow-hidden">
+        <div
+          class="absolute inset-0 opacity-10"
+          style="
+            background-image: radial-gradient(#c02126 1px, transparent 1px);
+            background-size: 32px 32px;
+          "
+        ></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 class="font-display text-3xl font-bold sm:text-4xl mb-6">
+                Unified Workflow &amp; <br />
+                <span class="text-primary">Shared Toolsets</span>
+              </h2>
+              <p class="text-gray-300 mb-8 text-lg">
+                We don't work in a silo. Our co-managed model is built on
+                transparency. You keep full control while leveraging our
+                enterprise-grade tool stack.
+              </p>
+              <ul class="space-y-6">
+                <li class="flex items-start gap-4">
+                  <div class="flex-shrink-0 mt-1">
+                    <span class="material-symbols-outlined text-primary"
+                      >confirmation_number</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="font-display font-bold text-lg">
+                      Shared Ticketing System
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                      Real-time visibility into every issue. You see what we
+                      see, and we can seamlessly pass tickets back and forth.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="flex-shrink-0 mt-1">
+                    <span class="material-symbols-outlined text-primary"
+                      >admin_panel_settings</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="font-display font-bold text-lg">
+                      Co-Managed Admin Rights
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                      You retain Global Admin rights. We work alongside you with
+                      audited access tailored to our scope.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="flex-shrink-0 mt-1">
+                    <span class="material-symbols-outlined text-primary"
+                      >hub</span
+                    >
+                  </div>
+                  <div>
+                    <h3 class="font-display font-bold text-lg">
+                      Monthly Strategy Syncs
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                      Regular meetings to review metrics, discuss upcoming
+                      projects, and align on IT roadmap.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="relative">
+              <div
+                class="rounded-xl bg-gray-800 border border-gray-700 p-8 shadow-2xl"
+              >
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="flex items-center justify-between border-b border-gray-700 pb-4"
+                  >
+                    <div class="h-4 w-32 bg-gray-600 rounded"></div>
+                    <div class="flex gap-2">
+                      <div
+                        class="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold"
+                      >
+                        IT
+                      </div>
+                      <div
+                        class="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-xs font-bold"
+                      >
+                        CO
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div
+                      class="bg-gray-900/50 p-4 rounded border border-gray-700"
+                    >
+                      <div class="text-xs text-gray-500 uppercase">
+                        Internal Tickets
+                      </div>
+                      <div
+                        class="text-2xl font-display font-bold text-white mt-1"
+                      >
+                        12
+                      </div>
+                    </div>
+                    <div
+                      class="bg-gray-900/50 p-4 rounded border border-primary/30"
+                    >
+                      <div class="text-xs text-gray-500 uppercase">
+                        Escalated Tickets
+                      </div>
+                      <div
+                        class="text-2xl font-display font-bold text-primary mt-1"
+                      >
+                        4
+                      </div>
+                    </div>
+                  </div>
+                  <div class="space-y-3 mt-2">
+                    <div
+                      class="h-10 w-full bg-gray-700/30 rounded flex items-center px-3 gap-3"
+                    >
+                      <div class="h-2 w-2 rounded-full bg-green-500"></div>
+                      <div class="h-2 w-2/3 bg-gray-600 rounded"></div>
+                    </div>
+                    <div
+                      class="h-10 w-full bg-gray-700/30 rounded flex items-center px-3 gap-3"
+                    >
+                      <div class="h-2 w-2 rounded-full bg-yellow-500"></div>
+                      <div class="h-2 w-1/2 bg-gray-600 rounded"></div>
+                    </div>
+                    <div
+                      class="h-10 w-full bg-gray-700/30 rounded flex items-center px-3 gap-3"
+                    >
+                      <div class="h-2 w-2 rounded-full bg-primary"></div>
+                      <div class="h-2 w-3/4 bg-gray-600 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 bg-white text-gray-900 p-4 rounded-lg shadow-xl max-w-[200px]"
+              >
+                <p class="font-bold text-sm mb-1">"Total Visibility"</p>
+                <p class="text-xs text-gray-600">
+                  No hidden work. Complete transparency in every action.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-background-light dark:bg-background-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <span
+              class="font-display text-sm font-bold uppercase tracking-wider text-primary mb-2 block"
+              >Client Scenarios</span
+            >
+            <h2
+              class="font-display text-3xl font-bold text-text-main dark:text-white sm:text-4xl"
+            >
+              When Does Co-Managed IT Make Sense?
+            </h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-background-subtle dark:bg-gray-800 rounded-lg p-8 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-white dark:border-gray-700 shadow-lg"
+              >
+                <img
+                  alt="Business woman in office"
+                  class="w-full h-full object-cover"
+                  data-alt="Professional woman in a modern office setting"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBkW3lWm0NVUSrRB1Lqa9TwoRsPaED8Cg7WNXU8EhqHxPObmnj8RM9T-iuHTEq3Zy1Z8SJ8PcfaxmQI8JC8F4DVFnirdLg_7ZyoEOnXZCU529QxylQE96_lj0c2k25YYY9fLTBax6apq9BBd3akCOXQLu1lSkWQrp9EwBV8xKMwhe02yX4AQImSEY_S6LndBgWyuq9W78K_cs2W8dDVTYdoZhtcdBIqDZxYPSjEvGUPWKMWUhqzKSw68fu2AsQXDDOctZ0y8GJ9MI"
+                />
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Rapid Growth</h3>
+              <p class="text-text-muted dark:text-gray-400 text-sm">
+                "We're hiring faster than we can onboard. Our IT manager is
+                drowning in laptop setups."
+              </p>
+              <div
+                class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 w-full"
+              >
+                <p class="text-primary font-bold text-sm">
+                  Solution: Onboarding &amp; Procurement Support
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-background-subtle dark:bg-gray-800 rounded-lg p-8 flex flex-col items-center text-center relative transform md:-translate-y-4 shadow-xl border-t-4 border-primary"
+            >
+              <div class="absolute top-4 right-4 text-primary">
+                <span class="material-symbols-outlined">star</span>
+              </div>
+              <div
+                class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-white dark:border-gray-700 shadow-lg"
+              >
+                <img
+                  alt="IT professional looking tired"
+                  class="w-full h-full object-cover"
+                  data-alt="Man looking at computer screen thoughtfully"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXzkVmxJMIfRc8BQeUuv6C8EWBannHAp4OjWj4KvZzr4YO1UX2QOicdsw1N7bz-TpPg1c_W5A9mWGRqXYDLWuKsn1K-HOANCjVLMxlMLWLNoTTrvo2XWfXQ4HC0E1dPmXLhAI3KLCH7rRGK-Z8hoVdF5MnabA2zqVQcvsFxiCjtZKkXE7FOrDHW1PATqX2wFzVpRHWiXLrKKkmw1rEhR_br7SBmOk3HOA5X3JkKxIpLGlDZmCJHP0zXVG_pwSQlxwzySkLXLsBwyg"
+                />
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Skill Gaps</h3>
+              <p class="text-text-muted dark:text-gray-400 text-sm">
+                "My team is great at helpdesk, but we don't have anyone who
+                knows Azure architecture."
+              </p>
+              <div
+                class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 w-full"
+              >
+                <p class="text-primary font-bold text-sm">
+                  Solution: Specialized Project Engineering
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-background-subtle dark:bg-gray-800 rounded-lg p-8 flex flex-col items-center text-center"
+            >
+              <div
+                class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-white dark:border-gray-700 shadow-lg"
+              >
+                <img
+                  alt="Empty office chair"
+                  class="w-full h-full object-cover"
+                  data-alt="Empty office chair in a modern workspace"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqrOcvEzShObIsKVPA82snV7qh-2JYAXnBYJ0Ym841DWA9g-ps8QoGMxPHukQtnWySxTwsOnSylRhoeNqGeJNitJliG2SXrMImTyFXGzOU2sNZtQ20cTNdvGA27ZfDbRkeUBTd8BGUHrJWb0x6lY9CA3rMRPM8j4i72EK_B3Z8mg0lwYN7cjo4a0N2GM8427VPxePhrUVgCWWmN8GFGAJFpGb7CzCYs_OYNmixnJuBhPaqZhHKyHFK7oVtynz0Z9ZFH90ijROPz7c"
+                />
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">Coverage Gaps</h3>
+              <p class="text-text-muted dark:text-gray-400 text-sm">
+                "Our only sysadmin is going on paternity leave for 6 weeks. Who
+                watches the servers?"
+              </p>
+              <div
+                class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 w-full"
+              >
+                <p class="text-primary font-bold text-sm">
+                  Solution: Temporary Staff Augmentation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 border-t border-gray-100 dark:border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="bg-primary rounded-2xl p-8 md:p-12 shadow-2xl text-white relative overflow-hidden flex flex-col justify-center items-center text-center"
+          >
+            <div
+              class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none"
+            >
+              <span class="material-symbols-outlined text-9xl">hub</span>
+            </div>
+            <div
+              class="absolute -top-24 -left-24 w-64 h-64 bg-white/20 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute -bottom-24 -right-24 w-64 h-64 bg-black/20 rounded-full blur-3xl"
+            ></div>
+            <div class="relative z-10 max-w-4xl">
+              <h2
+                class="font-display text-2xl md:text-4xl font-black leading-tight mb-6 tracking-wide uppercase"
+              >
+                Your Team + Our Tech = <br />
+                <span class="text-black/80 dark:text-white/80"
+                  >Unstoppable IT</span
+                >
+              </h2>
+              <div class="h-1 w-24 bg-white/40 mx-auto mb-8 rounded-full"></div>
+              <p
+                class="font-body text-xl md:text-2xl leading-relaxed text-white/95 font-medium"
+              >
+                "Co-Managed IT isn't about replacing your internal staff. It's
+                about giving them the enterprise-grade tools, strategic backup,
+                and specialized expertise they need to focus on innovation
+                instead of maintenance."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="relative py-24 overflow-hidden bg-background-light dark:bg-background-dark"
+      >
+        <div
+          class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"
+        >
+          <h2
+            class="font-display text-4xl font-black tracking-tight text-text-main dark:text-white sm:text-5xl mb-6"
+          >
+            Ready to Supercharge Your IT Dept?
+          </h2>
+          <p
+            class="text-xl text-text-muted dark:text-gray-400 max-w-2xl mx-auto mb-10"
+          >
+            Stop struggling with capacity limits. Let's design a custom
+            co-managed plan that fits your team and budget perfectly.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <button
+              class="h-14 px-8 rounded bg-primary text-white font-bold text-lg hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30 w-full sm:w-auto"
+            >
+              Schedule Your Discovery Call
+            </button>
+            <button
+              class="h-14 px-8 rounded border-2 border-gray-200 dark:border-gray-700 text-text-main dark:text-white font-bold text-lg hover:border-primary hover:text-primary transition-colors w-full sm:w-auto"
+            >
+              Download Services Guide
+            </button>
+          </div>
+          <p class="mt-6 text-sm text-text-muted">
+            No commitment required. Free initial assessment.
+          </p>
+        </div>
+      </section>
+       <footer
+        class="bg-accent dark:bg-slate-900 border-t border-black dark:border-slate-800 text-white"
+      >
+        <div class="container mx-auto px-6 py-12 md:py-16 md:px-16">
+          <div
+            class="flex justify-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:flex justify-center"
+          >
+            <div class="col-span-2 lg:col-span-1">
+              <a
+                class="flex items-center justify-center bg-white rounded-xl"
+                href="#"
+              >
+                <img
+                  alt="Summit IT Solutions Logo"
+                  class="w-40 h-20"
+                  src="../asset/SITS logo.png"
+                />
+              </a>
+              <p class="mt-4 text-sm text-white dark:text-slate-400">
+                Your Peak Partner in IT &amp; Cybersecurity
+              </p>
+
+              <h6
+                class="font-bold font-display text-white dark:text-white mt-4 text-[1.4rem]"
+              >
+                Company
+              </h6>
+              <ul class="space-y-1 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+              <br />
+
+              <h6
+                class="font-bold font-display text-white dark:text-white mt-4 text-[1.4rem]"
+              >
+                Resources
+              </h6>
+              <ul>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Blog Center</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Our Services
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Managed Cybersecurity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Penetration Testing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >IT Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >IT Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Co-Managed IT</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Backup &amp; Recovery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Business Communications (VoIP)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Conference Room as a Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Compliance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Managed Print Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >New Office Setup</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Industries
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Law Firms</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Accounting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Financial Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Healthcare & Dental</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Veterinary Clinics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Service Business</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Retail</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Manufacturing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Golf Clubs & Hospitality</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Real Estate</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Hardware
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Business Phones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Networking Equipment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Cameras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Door Access Control</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Conference Rooms</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-white dark:text-slate-400 font-display"
+          >
+            <p>© 2023 Summit IT Solutions, LLC. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!--JavaScipt-->
+  <script src="../js/script.js"></script>
+
+    <!--Lottie Scripts-->
+  <script>
+    var animation = lottie.loadAnimation({
+
+      container: document.getElementById('lottie-container'), 
+      renderer:'svg',
+      loop: true,
+      autoplay: true,
+      path: '../asset/managedprintlotte.json'
+    });
+  </script>
+</html>

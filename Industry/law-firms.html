@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT for Law Firms - Summit IT Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Orbitron:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#BF2026",
+            accent: {
+              DEFAULT: "#bf2026",
+            },
+            "background-light": "#FEFEFE",
+            "background-dark": "#18181B",
+            "surface-light": "#EEEEEE",
+            "surface-dark": "#27272A",
+          },
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            display: ["Orbitron", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans hero-bg-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased">
+  <div class="relative min-h-screen" x-data="{ isMenuOpen: false }">
+   
+    <header class="sticky top-0 z-50 bg-background-light/60 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+      <div class="container mx-auto px-4 py-4 md:py-8 flex justify-between items-center">
+
+        <a class="flex items-center space-x-3" href="../index.html">
+          <img alt="Summit IT Solutions Logo" class="w-200 h-28" src="../asset/SITS logo.png"/>
+        </a>
+  
+
+
+
+<nav class="hidden xl:flex items-center space-x-8">
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Our Services</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="./managed-cybersecurity.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Cybersecurity</a>
+        <a href="./penetration-testing.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Penetration Testing</a>
+        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Support</a>
+        <a href="./it-management.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Management</a>
+
+        <a href="./co-managed-it.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Co-Managed IT</a>
+        <a href="./bdr.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Backup & Recovery</a>
+        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Communications (VoIP)</a>
+        <a href="./conference-service.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Room as a Service</a>
+        <a href="./compliance.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Compliance</a>
+        <a href="./managed-print.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Print Services</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">New Office Setup</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"> 
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Hardware</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Phones</a>
+        <a href="#team" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Networking Equipment</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Cameras</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Door Access Control</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Rooms</a>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display md:text-[1.2rem]">Industries</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#managed-cybersecurity" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Law Firms</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Accounting</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Financial Services</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Healthcare & Dental</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Veterinary Clinics</a>
+
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Service Business</a>
+        <a href="#cloud-services" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Retail</a>
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Manufacturing</a>
+        
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent   dark:hover:bg-slate-700 font-display">Golf Clubs & Hospitality</a>
+
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Real Estate</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">About Us</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Why Summit?</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Careers</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Resources</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#latest-posts" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Blog Center</a>
+      </div>
+    </div>
+  </div>
+   
+</nav>
+        <button class="hidden xl:block bg-accent text-white text-md font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity font-display">
+            Get a Free Consultation
+        </button>
+        <button @click="isMenuOpen = true" class="xl:hidden text-slate-800 dark:text-slate-200">
+          <span class="material-symbols-outlined w-100 h-100">menu</span>
+        </button>
+  </div>
+</header>
+
+ <!--Mobile Navigation-->
+      <div
+        x-show="isMenuOpen"
+        @click="isMenuOpen = false"
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 z-40 bg-black bg-opacity-50 xl:hidden"
+      ></div>
+
+      <div
+        x-show="isMenuOpen"
+        x-transition:enter="transition ease-in-out duration-300 transform"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in-out duration-300 transform"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed top-0 right-0 w-full h-full bg-[linear-gradient(180deg,var(--tw-gradient-stops))] from-neutral-100 to-neutral-400 dark:bg-background-dark shadow-xl z-50 xl:hidden overflow-y-auto"
+      >
+        <div
+          class="p-4 border-b border-slate-200 dark:border-slate-700 flex justify-end"
+        >
+          <button
+            @click="isMenuOpen = false"
+            class="text-slate-800 dark:text-slate-200"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+
+        <div class="flex flex-col space-y-2 p-4">
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Our Services
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#managed-cybersecurity"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 text-center hover:text-accent dark:hover:text-accent py-1 font-display"
+                >Managed Cybersecurity</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Penetration Testing</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >IT Support</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >IT Management</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Co-Managed IT</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Backup & Recovery</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Business Communications (VoIP)</a
+              >
+              <a
+                href="#cloud-services"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Conference Room as a Service</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Compliance</a
+              >
+
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Managed Print Services</a
+              >
+
+
+                <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >New Office Setup</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Hardware
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#about-us"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Business Phones</a
+              >
+              <a
+                href="#team"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Networking Equipment</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Cameras</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Door Access Control</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Conference Rooms</a
+              >
+            
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Industries
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#managed-cybersecurity"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Law Firms</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Accounting</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Financial Services</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Healthcare & Dental</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Veterinary Clinics</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Service Business</a
+              >
+              <a
+                href="#cloud-services"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Retail</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Manufacturing</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Golf Clubs & Hospitality</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Real Estate</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              About Us
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#about-us"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Why Summit?</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Careers</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Resources
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#latest-posts"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Blog Center</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="mt-4 bg-accent text-white font-medium py-2 px-4 rounded-lg text-center hover:opacity-90 transition-opacity font-display text-sm"
+          >
+            Get a Free Consultation
+          </a>
+        </div>
+      </div>
+
+
+    <div
+      class="relative bg-background-light dark:bg-background-dark pb-16 pt-10 md:pt-16 lg:pb-24 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-grid-pattern dark:bg-grid-pattern-dark bg-[size:40px_40px] opacity-60"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-background-light/50 to-background-light dark:via-background-dark/50 dark:to-background-dark"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-8">
+            <div
+              class="inline-flex items-center gap-2 self-start bg-primary/10 border border-primary/20 px-4 py-1.5 rounded-full"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-primary animate-pulse"
+              ></span>
+              <span
+                class="text-primary font-bold tracking-wider text-xs uppercase font-display"
+                >Specialized for Legal Firms</span
+              >
+            </div>
+            <h1
+              class="text-5xl md:text-6xl xl:text-7xl font-black leading-tight text-text-main dark:text-white font-display uppercase tracking-tighter"
+            >
+              Secure
+              <span class="relative inline-block text-primary">
+                Evidence
+                <svg
+                  class="absolute w-full h-3 bottom-1 left-0 text-primary opacity-30 -z-10"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 100 10"
+                >
+                  <path
+                    d="M0 5 Q 50 10 100 5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="8"
+                  ></path>
+                </svg> </span
+              ><br />
+              Protect
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-gray-400 dark:from-gray-300 dark:to-gray-500"
+                >Reputation</span
+              >
+            </h1>
+            <p
+              class="text-lg md:text-xl text-text-muted dark:text-gray-300 font-body leading-relaxed max-w-2xl border-l-4 border-primary pl-6"
+            >
+              Ensure ABA compliance and client privilege with enterprise-grade
+              cybersecurity, encrypted communications, and 24/7 managed services
+              built for the courtroom and the cloud.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                class="group bg-primary hover:bg-primary-dark text-white text-base font-bold py-4 px-8 rounded-lg transition-all shadow-xl shadow-primary/25 hover:shadow-primary/40 font-body flex items-center justify-center gap-2"
+              >
+                Schedule Strategy Call
+                <span
+                  class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </button>
+              <button
+                class="group bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-text-main dark:text-white text-base font-bold py-4 px-8 rounded-lg transition-all font-body border border-gray-200 dark:border-gray-700 flex items-center justify-center gap-2 shadow-sm"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >download</span
+                >
+                Security Checklist
+              </button>
+            </div>
+            <div
+              class="flex flex-wrap gap-x-8 gap-y-4 pt-4 text-sm font-semibold text-text-muted dark:text-gray-400"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-green-600 fill-1"
+                  >check_circle</span
+                >
+                <span>ABA &amp; SOC2 Compliant</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-green-600 fill-1"
+                  >check_circle</span
+                >
+                <span>Zero-Trust Architecture</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-green-600 fill-1"
+                  >check_circle</span
+                >
+                <span>24/7/365 US-Based Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+            <div
+              class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800 transform rotate-2 hover:rotate-0 transition-transform duration-500"
+            >
+              <div
+                class="aspect-[4/5] bg-cover bg-center"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXyf2S_2TyfUNQ56pKgWQqXxYhkx5cPoxQdVR0QY-ZJLNg8IbKgROn1Sc73bx4xpdAz6Xj4XCsmai_dVTnAQ-ENfvqGwdMv0nasPz_tiLzYLl4COK62FSgAnTLDAGNqLYTm7kLod32YkwTiTdaZRwGHzDskOfeWDWmeiFQ_rzASNMfEW_ZqZMozmp0XbPy4A2fWMqq5eA76HbgJeTkDUKRgvdy3KOKwjPZ4nV7Za8kM7t5owOguhD3QsLZjo1OGVm5zDUPSwkalxM');
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+                ></div>
+                <div class="absolute bottom-0 left-0 p-8">
+                  <div
+                    class="bg-primary text-white text-xs font-bold px-3 py-1 uppercase inline-block mb-2 font-display tracking-widest"
+                  >
+                    Case Study
+                  </div>
+                  <p class="text-white font-bold text-lg leading-snug">
+                    How we secured a 50-person firm against ransomware in 24
+                    hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10"
+            ></div>
+            <div
+              class="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/20 rounded-full blur-3xl -z-10"
+            ></div>
+            <div
+              class="absolute top-10 -left-6 md:-left-12 bg-white dark:bg-background-card-dark p-5 rounded-xl shadow-xl border-l-4 border-primary z-20 max-w-[200px] hover:scale-105 transition-transform"
+            >
+              <div class="flex items-center gap-3 mb-2">
+                <div
+                  class="p-2 bg-red-50 dark:bg-red-900/20 rounded-lg text-primary"
+                >
+                  <span class="material-symbols-outlined">gavel</span>
+                </div>
+                <span
+                  class="text-2xl font-black font-display text-text-main dark:text-white"
+                  >99.9%</span
+                >
+              </div>
+              <p
+                class="text-xs text-text-muted dark:text-gray-400 font-semibold leading-tight"
+              >
+                Uptime Guarantee for Critical Case Files
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-background-dark text-white py-20 md:py-32 angled-bg relative"
+    >
+      <div
+        class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 border-b border-gray-800 pb-8"
+        >
+          <div class="max-w-2xl">
+            <span
+              class="text-primary font-bold tracking-wider text-sm uppercase font-display block mb-2"
+              >High Stakes</span
+            >
+            <h2
+              class="text-3xl md:text-5xl font-black font-display uppercase tracking-tight"
+            >
+              The Cost of <span class="text-primary">Downtime</span>
+            </h2>
+          </div>
+          <p class="text-gray-400 font-body max-w-md text-right md:text-left">
+            General IT support isn't enough when client privilege and billable
+            hours are on the line. We understand the specific threats facing
+            modern law firms.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="group relative bg-gray-900 p-1 rounded-2xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-primary/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div
+              class="relative bg-background-card-dark h-full p-8 rounded-xl overflow-hidden"
+            >
+              <div
+                class="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors"
+              ></div>
+              <div class="relative z-10">
+                <div
+                  class="w-14 h-14 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-primary shadow-inner border border-gray-700"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >shield_lock</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold font-display mb-4 uppercase tracking-wide"
+                >
+                  Data Breaches
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                  Law firms are prime targets. One breach can compromise client
+                  trust forever. We implement military-grade encryption for all
+                  communications.
+                </p>
+                <a
+                  class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#"
+                >
+                  View Security Protocols
+                  <span class="material-symbols-outlined text-sm"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative bg-gray-900 p-1 rounded-2xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-primary/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div
+              class="relative bg-background-card-dark h-full p-8 rounded-xl overflow-hidden"
+            >
+              <div
+                class="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors"
+              ></div>
+              <div class="relative z-10">
+                <div
+                  class="w-14 h-14 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-primary shadow-inner border border-gray-700"
+                >
+                  <span class="material-symbols-outlined text-3xl">policy</span>
+                </div>
+                <h3
+                  class="text-xl font-bold font-display mb-4 uppercase tracking-wide"
+                >
+                  Compliance Failure
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                  Navigating ABA, HIPAA, and GDPR requirements is complex. Our
+                  automated compliance engines ensure you never miss a
+                  regulatory update.
+                </p>
+                <a
+                  class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#"
+                >
+                  Check Compliance
+                  <span class="material-symbols-outlined text-sm"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative bg-gray-900 p-1 rounded-2xl hover:-translate-y-2 transition-transform duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-primary/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div
+              class="relative bg-background-card-dark h-full p-8 rounded-xl overflow-hidden"
+            >
+              <div
+                class="absolute -right-6 -top-6 w-24 h-24 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors"
+              ></div>
+              <div class="relative z-10">
+                <div
+                  class="w-14 h-14 bg-gray-800 rounded-lg flex items-center justify-center mb-6 text-primary shadow-inner border border-gray-700"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >hourglass_disabled</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold font-display mb-4 uppercase tracking-wide"
+                >
+                  Lost Billable Hours
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                  Tech issues shouldn't eat into profits. Our proactive
+                  monitoring fixes problems before they stop your attorneys from
+                  working.
+                </p>
+                <a
+                  class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all"
+                  href="#"
+                >
+                  Calculate Savings
+                  <span class="material-symbols-outlined text-sm"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="py-20 md:py-32 bg-background-subtle dark:bg-background-dark relative overflow-hidden"
+    >
+      <div
+        class="absolute top-40 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute bottom-20 right-0 w-96 h-96 bg-gray-200 dark:bg-gray-800/30 rounded-full blur-3xl"
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span
+            class="text-primary font-bold tracking-wider text-sm uppercase font-display block mb-3"
+            >Tailored Services</span
+          >
+          <h2
+            class="text-3xl md:text-5xl font-black font-display uppercase tracking-tight text-text-main dark:text-white mb-6"
+          >
+            Comprehensive Legal IT
+          </h2>
+          <p class="text-text-muted dark:text-gray-400 font-body text-lg">
+            From the courtroom to the conference room, we provide the
+            infrastructure that powers modern legal success.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-gray-200 dark:bg-background-card-dark p-6 angled-card hover:bg-white dark:hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300 group min-h-[340px] flex flex-col justify-between border-t-4 border-primary shadow-lg shadow-gray-200/50 dark:shadow-none"
+          >
+            <div>
+              <div class="mb-6 flex justify-between items-start">
+                <div
+                  class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >admin_panel_settings</span
+                  >
+                </div>
+                <span
+                  class="text-xs font-bold text-gray-400 group-hover:text-primary transition-colors"
+                  >01</span
+                >
+              </div>
+              <h3
+                class="text-lg font-bold font-display uppercase mb-3 text-text-main dark:text-white"
+              >
+                Managed Cybersecurity
+              </h3>
+              <p
+                class="text-sm text-text-muted dark:text-gray-400 leading-relaxed mb-4"
+              >
+                Proactive threat hunting, endpoint protection, and 24/7 SOC
+                monitoring to secure sensitive client communications.
+              </p>
+              <ul class="space-y-2 mb-4">
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                  Threat Intelligence
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                  Email Encryption
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-200 dark:bg-background-card-dark p-6 angled-card hover:bg-white dark:hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300 group min-h-[340px] flex flex-col justify-between border-t-4 border-gray-300 dark:border-gray-700 hover:border-primary shadow-lg shadow-gray-200/50 dark:shadow-none"
+          >
+            <div>
+              <div class="mb-6 flex justify-between items-start">
+                <div
+                  class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-text-muted group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >cloud_sync</span
+                  >
+                </div>
+                <span
+                  class="text-xs font-bold text-gray-400 group-hover:text-primary transition-colors"
+                  >02</span
+                >
+              </div>
+              <h3
+                class="text-lg font-bold font-display uppercase mb-3 text-text-main dark:text-white"
+              >
+                Backup &amp; Recovery
+              </h3>
+              <p
+                class="text-sm text-text-muted dark:text-gray-400 leading-relaxed mb-4"
+              >
+                Encrypted, immutable cloud backups ensuring zero data loss of
+                critical evidence and rapid disaster recovery.
+              </p>
+              <ul class="space-y-2 mb-4">
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span
+                    class="w-1.5 h-1.5 bg-gray-400 group-hover:bg-primary rounded-full transition-colors"
+                  ></span>
+                  Hourly Snapshots
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span
+                    class="w-1.5 h-1.5 bg-gray-400 group-hover:bg-primary rounded-full transition-colors"
+                  ></span>
+                  Ransomware Rollback
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-200 dark:bg-background-card-dark p-6 angled-card hover:bg-white dark:hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300 group min-h-[340px] flex flex-col justify-between border-t-4 border-gray-300 dark:border-gray-700 hover:border-primary shadow-lg shadow-gray-200/50 dark:shadow-none"
+          >
+            <div>
+              <div class="mb-6 flex justify-between items-start">
+                <div
+                  class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-text-muted group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl">call</span>
+                </div>
+                <span
+                  class="text-xs font-bold text-gray-400 group-hover:text-primary transition-colors"
+                  >03</span
+                >
+              </div>
+              <h3
+                class="text-lg font-bold font-display uppercase mb-3 text-text-main dark:text-white"
+              >
+                Managed VoIP
+              </h3>
+              <p
+                class="text-sm text-text-muted dark:text-gray-400 leading-relaxed mb-4"
+              >
+                Crystal-clear, encrypted voice solutions allowing attorneys to
+                communicate securely from the office or court.
+              </p>
+              <ul class="space-y-2 mb-4">
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span
+                    class="w-1.5 h-1.5 bg-gray-400 group-hover:bg-primary rounded-full transition-colors"
+                  ></span>
+                  Mobile App Integration
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span
+                    class="w-1.5 h-1.5 bg-gray-400 group-hover:bg-primary rounded-full transition-colors"
+                  ></span>
+                  Call Recording
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="bg-gray-200 dark:bg-background-card-dark p-6 angled-card hover:bg-white dark:hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300 group min-h-[340px] flex flex-col justify-between border-t-4 border-gray-300 dark:border-gray-700 hover:border-primary shadow-lg shadow-gray-200/50 dark:shadow-none"
+          >
+            <div>
+              <div class="mb-6 flex justify-between items-start">
+                <div
+                  class="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-text-muted group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl">hub</span>
+                </div>
+                <span
+                  class="text-xs font-bold text-gray-400 group-hover:text-primary transition-colors"
+                  >04</span
+                >
+              </div>
+              <h3
+                class="text-lg font-bold font-display uppercase mb-3 text-text-main dark:text-white"
+              >
+                New Office Setup
+              </h3>
+              <p
+                class="text-sm text-text-muted dark:text-gray-400 leading-relaxed mb-4"
+              >
+                Turnkey IT infrastructure for new firm locations, including
+                structured cabling, conference room AV, and secure Wi-Fi.
+              </p>
+              <ul class="space-y-2 mb-4">
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span
+                    class="w-1.5 h-1.5 bg-gray-400 group-hover:bg-primary rounded-full transition-colors"
+                  ></span>
+                  Conference Room AV
+                </li>
+                <li
+                  class="flex items-center gap-2 text-xs text-text-muted dark:text-gray-500 font-semibold"
+                >
+                  <span
+                    class="w-1.5 h-1.5 bg-gray-400 group-hover:bg-primary rounded-full transition-colors"
+                  ></span>
+                  Secure Guest Wi-Fi
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white dark:bg-background-dark py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 flex flex-col gap-8">
+            <div>
+              <span
+                class="text-primary font-bold tracking-wider text-sm uppercase font-display block mb-2"
+                >Seamless Workflow</span
+              >
+              <h2
+                class="text-3xl md:text-5xl font-black font-display uppercase tracking-tight text-text-main dark:text-white mb-6"
+              >
+                Optimized for <br /><span class="text-primary">Legal Tech</span>
+              </h2>
+              <p
+                class="text-text-muted dark:text-gray-300 font-body text-lg leading-relaxed"
+              >
+                We don't just fix computers; we are experts in the software that
+                runs your firm. From practice management to discovery tools, we
+                ensure seamless integration and peak performance.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+              <div
+                class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-subtle dark:hover:bg-gray-800 transition-colors cursor-default group"
+              >
+                <div
+                  class="p-2 bg-primary/10 text-primary rounded-lg mt-1 group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined">folder_shared</span>
+                </div>
+                <div>
+                  <h4
+                    class="font-bold text-text-main dark:text-white font-display mb-1"
+                  >
+                    Document Management Systems
+                  </h4>
+                  <p class="text-sm text-text-muted dark:text-gray-400">
+                    Deep integration with NetDocuments, iManage, and Worldox
+                    tailored for secure remote access.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-subtle dark:hover:bg-gray-800 transition-colors cursor-default group"
+              >
+                <div
+                  class="p-2 bg-primary/10 text-primary rounded-lg mt-1 group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined">gavel</span>
+                </div>
+                <div>
+                  <h4
+                    class="font-bold text-text-main dark:text-white font-display mb-1"
+                  >
+                    Practice Management Software
+                  </h4>
+                  <p class="text-sm text-text-muted dark:text-gray-400">
+                    Optimization for Clio, MyCase, and PracticePanther to keep
+                    your firm billing efficiently.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 p-4 rounded-xl hover:bg-background-subtle dark:hover:bg-gray-800 transition-colors cursor-default group"
+              >
+                <div
+                  class="p-2 bg-primary/10 text-primary rounded-lg mt-1 group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined"
+                    >video_camera_front</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-bold text-text-main dark:text-white font-display mb-1"
+                  >
+                    Hybrid Courtroom Ready
+                  </h4>
+                  <p class="text-sm text-text-muted dark:text-gray-400">
+                    High-definition AV setups for depositions and virtual
+                    hearings with zero lag.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2 relative">
+            <div
+              class="relative rounded-2xl overflow-hidden shadow-2xl h-full min-h-[500px] border-4 border-white dark:border-gray-800"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center"
+                data-alt="Close up of legal books and gavel on a wooden table representing law practice"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoqOcNtE9TSInxNiXe8i7Uz0Fe4MMfYNurPpuhwvfGAMTolBqDqYxO-VkHo6kcBZhspXxPyO0zMCPgbLV1iDh9e9k7UffA8ZGaSIcQSW07c1CRXhQJW3lV2wrQvZnj7GiOAk7aegfOjSLVrjPQuhxXkh0yroaSdBjuomkDCgpPBNCTajRSTEWdutuJoCXatH5NBd5oQIl_7Whm2MvA1KQ1hhfwre1yeAU8wykihNenP_Vz5LpLmGdBXYwqbR2fE7r0OvZP4op4UOY');
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-24 relative overflow-hidden bg-primary">
+      <div
+        class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"
+      ></div>
+      <div
+        class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary via-primary-dark to-black opacity-90"
+      ></div>
+      <div
+        class="absolute top-10 left-10 w-32 h-32 border-4 border-white/10 rounded-full"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-64 h-64 border-8 border-white/5 rounded-full"
+      ></div>
+      <div class="max-w-5xl mx-auto px-6 text-center relative z-10 text-white">
+        <h2
+          class="text-4xl md:text-6xl font-black font-display uppercase tracking-tight mb-8 drop-shadow-lg"
+        >
+          Is Your Firm
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300"
+            >Secure?</span
+          >
+        </h2>
+        <p
+          class="text-white/90 font-body text-xl mb-12 max-w-2xl mx-auto leading-relaxed"
+        >
+          Don't wait for a data breach to upgrade your IT. Get a comprehensive,
+          no-obligation security audit tailored for your law firm's specific
+          risks.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <button
+            class="bg-white text-primary hover:bg-gray-100 text-lg font-black py-5 px-10 rounded-lg transition-all shadow-2xl hover:scale-105 font-display uppercase tracking-wide"
+          >
+            Schedule Free IT Audit
+          </button>
+          <button
+            class="bg-transparent border-2 border-white hover:bg-white/10 text-white text-lg font-bold py-5 px-10 rounded-lg transition-all font-body flex items-center justify-center gap-2"
+          >
+            <span class="material-symbols-outlined">call</span>
+            (555) 123-4567
+          </button>
+        </div>
+        <p
+          class="mt-8 text-sm text-white/60 font-medium uppercase tracking-widest"
+        >
+          Limited Availability for New Clients in Q4
+        </p>
+      </div>
+    </div>
+      <footer
+        class="bg-accent dark:bg-slate-900 border-t border-black dark:border-slate-800 text-white"
+      >
+        <div class="container mx-auto px-6 py-12 md:py-16 md:px-16">
+          <div
+            class="flex justify-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:flex justify-center"
+          >
+            <div class="col-span-2 lg:col-span-1">
+              <a
+                class="flex items-center justify-center bg-white rounded-xl"
+                href="#"
+              >
+                <img
+                  alt="Summit IT Solutions Logo"
+                  class="w-40 h-20"
+                  src="../asset/SITS logo.png"
+                />
+              </a>
+              <p class="mt-4 text-sm text-white dark:text-slate-400">
+                Your Peak Partner in IT &amp; Cybersecurity
+              </p>
+
+              <h6
+                class="font-bold font-display text-white dark:text-white mt-4 text-[1.4rem]"
+              >
+                Company
+              </h6>
+              <ul class="space-y-1 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+              <br />
+
+              <h6
+                class="font-bold font-display text-white dark:text-white mt-4 text-[1.4rem]"
+              >
+                Resources
+              </h6>
+              <ul>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Blog Center</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Our Services
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Managed Cybersecurity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Penetration Testing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >IT Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >IT Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Co-Managed IT</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Backup &amp; Recovery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Business Communications (VoIP)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Conference Room as a Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Compliance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Managed Print Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >New Office Setup</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Industries
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Law Firms</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Accounting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Financial Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Healthcare & Dental</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Veterinary Clinics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Service Business</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Retail</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Manufacturing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Golf Clubs & Hospitality</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Real Estate</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Hardware
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Business Phones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Networking Equipment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Cameras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Door Access Control</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Conference Rooms</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-white dark:text-slate-400 font-display"
+          >
+            <p>© 2023 Summit IT Solutions, LLC. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!--JavaScipt-->
+  <script src="../js/script.js"></script>
+
+</html>

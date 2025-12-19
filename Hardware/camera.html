@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Security Cameras - Summit IT Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Orbitron:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#BF2026",
+            accent: {
+              DEFAULT: "#bf2026",
+            },
+            "background-light": "#FEFEFE",
+            "background-dark": "#18181B",
+            "surface-light": "#EEEEEE",
+            "surface-dark": "#27272A",
+          },
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            display: ["Orbitron", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans hero-bg-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased">
+  <div class="relative min-h-screen" x-data="{ isMenuOpen: false }">
+   
+    <header class="sticky top-0 z-50 bg-background-light/60 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+      <div class="container mx-auto px-4 py-4 md:py-8 flex justify-between items-center">
+
+        <a class="flex items-center space-x-3" href="../index.html">
+          <img alt="Summit IT Solutions Logo" class="w-200 h-28" src="../asset/SITS logo.png"/>
+        </a>
+  
+
+
+
+<nav class="hidden xl:flex items-center space-x-8">
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Our Services</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="./managed-cybersecurity.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Cybersecurity</a>
+        <a href="./penetration-testing.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Penetration Testing</a>
+        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Support</a>
+        <a href="./it-management.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Management</a>
+
+        <a href="./co-managed-it.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Co-Managed IT</a>
+        <a href="./bdr.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Backup & Recovery</a>
+        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Communications (VoIP)</a>
+        <a href="./conference-service.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Room as a Service</a>
+        <a href="./compliance.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Compliance</a>
+        <a href="./managed-print.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Print Services</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">New Office Setup</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"> 
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Hardware</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Phones</a>
+        <a href="#team" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Networking Equipment</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Cameras</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Door Access Control</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Rooms</a>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display md:text-[1.2rem]">Industries</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#managed-cybersecurity" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Law Firms</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Accounting</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Financial Services</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Healthcare & Dental</a>
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Veterinary Clinics</a>
+
+        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Service Business</a>
+        <a href="#cloud-services" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Retail</a>
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Manufacturing</a>
+        
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent   dark:hover:bg-slate-700 font-display">Golf Clubs & Hospitality</a>
+
+        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Real Estate</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">About Us</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Why Summit?</a>
+        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Careers</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <a class="text-md font-medium hover:text-accent dark:hover:text-accent transition-colors cursor-pointer font-display text-[1.2rem]">Resources</a>
+    
+    <div x-show="open" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 transform scale-95"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-95"
+         x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
+      <div class="py-1 text-center">
+        <a href="#latest-posts" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Blog Center</a>
+      </div>
+    </div>
+  </div>
+   
+</nav>
+        <button class="hidden xl:block bg-accent text-white text-md font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity font-display">
+            Get a Free Consultation
+        </button>
+        <button @click="isMenuOpen = true" class="xl:hidden text-slate-800 dark:text-slate-200">
+          <span class="material-symbols-outlined w-100 h-100">menu</span>
+        </button>
+  </div>
+</header>
+
+ <!--Mobile Navigation-->
+      <div
+        x-show="isMenuOpen"
+        @click="isMenuOpen = false"
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 z-40 bg-black bg-opacity-50 xl:hidden"
+      ></div>
+
+      <div
+        x-show="isMenuOpen"
+        x-transition:enter="transition ease-in-out duration-300 transform"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition ease-in-out duration-300 transform"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="translate-x-full"
+        class="fixed top-0 right-0 w-full h-full bg-[linear-gradient(180deg,var(--tw-gradient-stops))] from-neutral-100 to-neutral-400 dark:bg-background-dark shadow-xl z-50 xl:hidden overflow-y-auto"
+      >
+        <div
+          class="p-4 border-b border-slate-200 dark:border-slate-700 flex justify-end"
+        >
+          <button
+            @click="isMenuOpen = false"
+            class="text-slate-800 dark:text-slate-200"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+
+        <div class="flex flex-col space-y-2 p-4">
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Our Services
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#managed-cybersecurity"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 text-center hover:text-accent dark:hover:text-accent py-1 font-display"
+                >Managed Cybersecurity</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Penetration Testing</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >IT Support</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >IT Management</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Co-Managed IT</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Backup & Recovery</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Business Communications (VoIP)</a
+              >
+              <a
+                href="#cloud-services"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Conference Room as a Service</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Compliance</a
+              >
+
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Managed Print Services</a
+              >
+
+
+                <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >New Office Setup</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Hardware
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#about-us"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Business Phones</a
+              >
+              <a
+                href="#team"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Networking Equipment</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Cameras</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Door Access Control</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Conference Rooms</a
+              >
+            
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Industries
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#managed-cybersecurity"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Law Firms</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Accounting</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Financial Services</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Healthcare & Dental</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Veterinary Clinics</a
+              >
+              <a
+                href="#it-support"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Service Business</a
+              >
+              <a
+                href="#cloud-services"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Retail</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Manufacturing</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Golf Clubs & Hospitality</a
+              >
+              <a
+                href="#voip"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Real Estate</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              About Us
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#about-us"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Why Summit?</a
+              >
+              <a
+                href="#careers"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Careers</a
+              >
+            </div>
+          </div>
+
+          <div
+            x-data="{ open: false }"
+            class="border-b border-slate-200 dark:border-slate-700 pb-2"
+          >
+            <button
+              @click="open = !open"
+              class="flex justify-between items-center w-full text-lg font-medium hover:text-accent dark:hover:text-accent py-2 transition-colors font-display"
+            >
+              Resources
+              <span
+                class="material-symbols-outlined transition-transform duration-300"
+                :class="open ? 'rotate-180' : ''"
+              >
+                expand_more
+              </span>
+            </button>
+
+            <div
+              x-show="open"
+              x-collapse
+              class="flex flex-col space-y-3 bg-white rounded-lg"
+            >
+              <a
+                href="#latest-posts"
+                class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
+                >Blog Center</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="mt-4 bg-accent text-white font-medium py-2 px-4 rounded-lg text-center hover:opacity-90 transition-opacity font-display text-sm"
+          >
+            Get a Free Consultation
+          </a>
+        </div>
+      </div>
+    <section
+      class="bg-gradient-to-br from-white via-background-light to-gray-100 min-h-[600px] flex items-center relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,_rgba(191,32,38,0.03)_0%,_transparent_50%)]"
+      ></div>
+      <div
+        class="max-w-[1400px] mx-auto px-6 lg:px-20 w-full grid lg:grid-cols-2 gap-12 items-center py-16 relative z-10"
+      >
+        <div class="flex flex-col gap-6 lg:pr-10">
+          <span
+            class="text-primary font-orbitron font-bold tracking-wide text-lg uppercase"
+            >Security Camera Hardware</span
+          >
+          <h1
+            class="text-[#171212] font-orbitron font-black text-4xl lg:text-6xl leading-[1.1] tracking-tight"
+          >
+            COMPLETE VISION:<br />
+            <span class="text-primary">TOTAL SECURITY</span>
+            <br />SOLUTIONS.
+          </h1>
+          <p
+            class="text-gray-600 text-lg lg:text-xl font-light leading-relaxed max-w-xl"
+          >
+            Protect your assets with our state-of-the-art surveillance systems.
+            From crystal-clear 4K resolution to AI-powered analytics, we bring
+            clarity and peace of mind to your security infrastructure.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-4">
+            <button
+              class="bg-primary hover:bg-[#a01a1f] text-white font-orbitron font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all text-sm tracking-wider uppercase"
+            >
+              Request Assessment
+            </button>
+            <button
+              class="bg-[#a01a1f] hover:bg-primary text-white font-orbitron font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all text-sm tracking-wider uppercase"
+            >
+              View Hardware Options
+            </button>
+          </div>
+        </div>
+        <div
+          class="relative h-full min-h-[400px] lg:min-h-[500px] w-full rounded-none lg:rounded-sm overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute inset-0 bg-primary/10 z-10 mix-blend-overlay pointer-events-none"
+          ></div>
+          <img
+            alt="High-tech security camera lens close-up with blue reflections"
+            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuByjrU9znBi6yMdLUpZKMEX1JHALHagR6p8n6U9Un6XU9_NqaQ-GtZPPustbkMPvmkbRkvHwwT008QceMCEuDlSNR6P5H_Q2QR6ZCZK97zF-pP1WzudGFloNjLltLF9wQmGrmzSQKAJEWekv-tGGLRGXno7T_gW6jTR2jxDVuGmUSv10vbsLwq_2Rj86lm6oMc78I-KMKaamub780OC_E3ByRv3IYv265Qm3uC23KtjKbUd3LaK96izDS2wrRZ_YDPCxwYWEg0UXMA"
+          />
+          <div class="absolute bottom-0 right-0 p-8 z-20 hidden lg:block">
+            <div
+              class="bg-black/80 backdrop-blur-md p-4 border-l-4 border-primary"
+            >
+              <div
+                class="text-white font-orbitron text-xs tracking-widest uppercase mb-1"
+              >
+                System Status
+              </div>
+              <div class="text-primary font-bold font-orbitron text-xl">
+                ACTIVE MONITORING
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 px-6 lg:px-40 bg-white">
+      <div
+        class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-12 items-center"
+      >
+        <div class="flex-1 flex flex-col gap-6">
+          <h2
+            class="text-[#171212] text-3xl lg:text-4xl font-orbitron font-bold leading-tight"
+          >
+            INTELLIGENT SURVEILLANCE <br />FOR THE MODERN ERA
+          </h2>
+          <div class="w-20 h-1 bg-primary rounded-full"></div>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            Gone are the days of grainy footage and complex management. SITS
+            provides end-to-end security camera solutions designed for clarity,
+            reliability, and ease of use.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            Whether you need to monitor a single retail storefront or a
+            sprawling industrial complex, our systems scale to your needs,
+            offering features like license plate recognition, facial detection,
+            and instant mobile alerts.
+          </p>
+          <div class="flex gap-8 mt-4">
+            <div class="flex flex-col gap-1">
+              <span class="text-3xl font-orbitron font-bold text-primary"
+                >4K</span
+              >
+              <span
+                class="text-sm font-medium uppercase tracking-wide text-gray-500"
+                >Resolution</span
+              >
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-3xl font-orbitron font-bold text-primary"
+                >24/7</span
+              >
+              <span
+                class="text-sm font-medium uppercase tracking-wide text-gray-500"
+                >Recording</span
+              >
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-3xl font-orbitron font-bold text-primary"
+                >100%</span
+              >
+              <span
+                class="text-sm font-medium uppercase tracking-wide text-gray-500"
+                >Uptime</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 w-full">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl group">
+            <img
+              alt="Technician installing a modern white dome security camera on a ceiling"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              data-alt="Security technician installing camera equipment"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc8Lyfc0O0BGPgLv9p5EY7DRbBXdUKPpMMQpV6ZImEpL5DTdlcTpDD31jH8PGjb0jw0O75g4eYEu_268WeW2N9Pj1RHLTdHdRNKrxH92KKSY3-sjASry7GOaTgVTvSQW6mYjyqt-m96FCPoy-fA5gRV1y7ycOdcoq6qZPTLOOb3QOPxlQVH3ViRGzwfqi3lDNzvzkgsFfpcUfSX27bdo7hgfl5vqRkG2_w5z_CH8Vcd8FJyOg6BoIVlslwdWe2Wyyo2UsK0QAjS90"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6"
+            >
+              <p class="text-white font-orbitron font-medium">
+                Professional Installation Included
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-6 lg:px-24 bg-gray-50 relative overflow-hidden">
+      <div
+        class="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none opacity-40"
+      >
+        <svg
+          class="absolute top-0 right-0 text-gray-200 w-[800px] h-[800px] -translate-y-1/2 translate-x-1/3"
+          fill="none"
+          viewBox="0 0 200 200"
+        >
+          <defs>
+            <pattern
+              height="40"
+              id="grid-pattern"
+              patternUnits="userSpaceOnUse"
+              width="40"
+              x="0"
+              y="0"
+            >
+              <path
+                d="M0 40L40 0H20L0 20M40 40V20L20 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </pattern>
+          </defs>
+          <rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+        </svg>
+      </div>
+      <div class="max-w-[1400px] mx-auto relative z-10">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8"
+        >
+          <div class="lg:w-1/2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="h-px w-12 bg-primary"></span>
+              <span
+                class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+                >Hardware Ecosystem</span
+              >
+            </div>
+            <h2
+              class="text-[#171212] text-4xl lg:text-6xl font-orbitron font-black leading-[0.9]"
+            >
+              COMPREHENSIVE <br />
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#8a1519]"
+                >CAMERA SYSTEMS</span
+              >
+            </h2>
+          </div>
+          <div class="lg:w-1/3 pb-2">
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Explore our range of high-definition surveillance options. We
+              combine industrial-grade hardware with intelligent software for
+              unparalleled security coverage.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+          <div
+            class="lg:col-span-7 md:col-span-2 group relative bg-[#171212] rounded-[2rem] p-8 lg:p-12 overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-1"
+          >
+            <div
+              class="absolute top-0 right-0 p-12 opacity-5 transform group-hover:scale-110 transition-transform duration-700"
+            >
+              <span class="material-symbols-outlined text-[200px] text-white"
+                >nest_cam_indoor</span
+              >
+            </div>
+            <div
+              class="relative z-10 h-full flex flex-col justify-between min-h-[320px]"
+            >
+              <div>
+                <div
+                  class="inline-flex items-center justify-center size-14 rounded-full bg-white/10 text-primary border border-white/10 mb-6 backdrop-blur-sm"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >nest_cam_indoor</span
+                  >
+                </div>
+                <h3 class="text-3xl font-orbitron font-bold text-white mb-4">
+                  Dome Cameras
+                </h3>
+                <p class="text-gray-400 text-lg max-w-md">
+                  Discreet, low-profile cameras ideal for retail and offices.
+                  Vandal-resistant IK10 rated housing ensures durability.
+                </p>
+              </div>
+              <div class="mt-8">
+                <a
+                  class="inline-flex items-center gap-2 text-white font-bold uppercase tracking-wider text-sm hover:text-primary transition-colors group/link"
+                  href="#"
+                >
+                  View Specifications
+                  <span
+                    class="material-symbols-outlined text-lg group-hover/link:translate-x-1 transition-transform"
+                    >arrow_forward</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-5 md:col-span-2 group relative bg-white rounded-[2rem] p-8 lg:p-12 border border-gray-100 overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-1"
+          >
+            <div
+              class="absolute -right-6 -top-6 size-40 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"
+            ></div>
+            <div class="relative z-10 h-full flex flex-col">
+              <div class="flex justify-between items-start mb-6">
+                <div
+                  class="inline-flex items-center justify-center size-14 rounded-full bg-red-50 text-primary mb-6"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >videocam</span
+                  >
+                </div>
+                <span
+                  class="px-3 py-1 rounded-full bg-gray-100 text-xs font-bold text-gray-500 uppercase tracking-wide"
+                  >Long Range</span
+                >
+              </div>
+              <h3 class="text-3xl font-orbitron font-bold text-[#171212] mb-3">
+                Bullet Cameras
+              </h3>
+              <p class="text-gray-500 text-lg mb-8">
+                High-visibility deterrents with powerful IR night vision.
+                Engineered for perimeters.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between"
+              >
+                <span class="text-sm font-bold text-gray-400">IP67 RATED</span>
+                <div
+                  class="size-10 rounded-full bg-black text-white flex items-center justify-center group-hover:bg-primary transition-colors cursor-pointer"
+                >
+                  <span class="material-symbols-outlined text-xl">add</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-4 md:col-span-1 group relative bg-primary rounded-[2rem] p-8 overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-1"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-transparent to-black/20"
+            ></div>
+            <div class="relative z-10">
+              <div class="flex items-center justify-between mb-8">
+                <span class="material-symbols-outlined text-4xl text-white"
+                  >control_camera</span
+                >
+                <span class="font-orbitron font-bold text-white/40 text-4xl"
+                  >03</span
+                >
+              </div>
+              <h3 class="text-2xl font-orbitron font-bold text-white mb-3">
+                PTZ Cameras
+              </h3>
+              <p class="text-white/80 leading-relaxed mb-6">
+                Active 360° monitoring with optical zoom capabilities. Take
+                control of your view.
+              </p>
+              <button
+                class="px-4 py-2 bg-white/20 hover:bg-white text-white hover:text-primary rounded-lg text-xs font-bold uppercase tracking-widest backdrop-blur-sm transition-all"
+              >
+                Check Demo
+              </button>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-4 md:col-span-1 group relative bg-white rounded-[2rem] p-8 border border-gray-100 overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-1"
+          >
+            <div class="relative z-10">
+              <div class="flex items-center justify-between mb-8">
+                <span class="material-symbols-outlined text-4xl text-gray-800"
+                  >dns</span
+                >
+                <span class="font-orbitron font-bold text-gray-200 text-4xl"
+                  >04</span
+                >
+              </div>
+              <h3 class="text-2xl font-orbitron font-bold text-[#171212] mb-3">
+                NVR Systems
+              </h3>
+              <p class="text-gray-500 leading-relaxed mb-6">
+                Scalable storage with RAID redundancy. Never lose a second of
+                critical footage.
+              </p>
+              <div class="flex gap-2">
+                <span
+                  class="px-2 py-1 bg-gray-100 rounded text-[10px] font-bold text-gray-600 uppercase"
+                  >H.265+</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-100 rounded text-[10px] font-bold text-gray-600 uppercase"
+                  >4K Output</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-4 md:col-span-2 group relative bg-gradient-to-br from-[#1c1c1c] to-[#000] rounded-[2rem] p-8 overflow-hidden shadow-xl transition-transform duration-500 hover:-translate-y-1"
+          >
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-[50px]"
+            ></div>
+            <div class="relative z-10 h-full flex flex-col">
+              <h3
+                class="text-xl font-orbitron font-bold text-white mb-6 flex items-center gap-2"
+              >
+                <span
+                  class="size-2 rounded-full bg-green-500 animate-pulse"
+                ></span>
+                Smart Intelligence
+              </h3>
+              <div class="space-y-4">
+                <div
+                  class="flex items-start gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >visibility</span
+                  >
+                  <div>
+                    <h4 class="text-white font-bold text-sm">LPR Technology</h4>
+                    <p class="text-gray-500 text-xs mt-1">
+                      Automated license plate recognition.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >devices</span
+                  >
+                  <div>
+                    <h4 class="text-white font-bold text-sm">Remote Access</h4>
+                    <p class="text-gray-500 text-xs mt-1">
+                      View feeds from any device, anywhere.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 px-6 lg:px-40 bg-white">
+      <div class="max-w-[1200px] mx-auto">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="flex-1 grid grid-cols-2 gap-4">
+            <img
+              alt="Security monitoring center screens"
+              class="rounded-lg shadow-md w-full h-48 object-cover translate-y-8"
+              data-alt="Multiple monitor security station"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcCFGtSTGwTHvV7E2B0RnL16GvfQtIYjrHaPDV2OqVgKK8LKdjz1hDlx6pbuemvrmgwywDUTQCuR9D4Jh-Q8JB-7oQuxba2qRzn5_bcYDNcdzItw9pcqIUE4OgiBj_tWbkG5pPE-mfJFbFZOXQjzS_0rB5bHV6CtyhrLYo95Kcd8pJEk7XKLmwsFaYg_Qng3eZyHqsizQmQijSspamRVZayggXu_H9KWGn4FWehRjSmbkwGNcrjh-FzLBOwzfZI8VZu158uznCvfM"
+            />
+            <img
+              alt="Outdoor bullet camera on a brick wall"
+              class="rounded-lg shadow-md w-full h-48 object-cover"
+              data-alt="Outdoor security camera"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNqMCivf5EtxHRd-luQ0hwqzCUr94Wg3EWAeE_ZWA6r3ciCa7i40Cuwh2ClZrr7-vijEOhUdPNJzMLoQmUXp6ueDQdhl3_zjsyveVGbRFexOVM-bbcqBEbq2nFFXsBO9mnj_X9MUgqSG-JwhrVRBKoB7IXFdkAz_VwpiNF45OL5YgNFfVIEzgrAnaIHLJSAfUvc7Xi930yGfWbmcHWpCkvWEkBxbmoefpq93H9mzwGBbsP9vJPNR5WsSDH5S4MVNEi_CLeFvVmlfY"
+            />
+          </div>
+          <div class="flex-1 flex flex-col gap-6">
+            <h2
+              class="text-[#171212] text-3xl font-orbitron font-bold leading-tight"
+            >
+              WHY PARTNER WITH SITS?
+            </h2>
+            <p class="text-gray-600 mb-4">
+              We don't just sell cameras; we design security ecosystems. Our
+              team handles everything from the initial site survey and cabling
+              to configuration and end-user training.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1"
+                  >verified_user</span
+                >
+                <div>
+                  <h4 class="font-bold text-[#171212]">Cybersecurity First</h4>
+                  <p class="text-sm text-gray-500">
+                    We secure your cameras against hacking attempts, ensuring
+                    your privacy remains intact.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1"
+                  >construction</span
+                >
+                <div>
+                  <h4 class="font-bold text-[#171212]">Expert Installation</h4>
+                  <p class="text-sm text-gray-500">
+                    Our certified technicians ensure clean cabling and optimal
+                    viewing angles.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1"
+                  >support_agent</span
+                >
+                <div>
+                  <h4 class="font-bold text-[#171212]">Ongoing Support</h4>
+                  <p class="text-sm text-gray-500">
+                    We monitor the health of your system to ensure it's
+                    recording when you need it most.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="py-10 border-y border-gray-100 bg-gray-50">
+      <div class="px-6 lg:px-40 flex justify-center">
+        <div
+          class="max-w-[1200px] w-full flex flex-wrap justify-center items-center gap-12 grayscale opacity-60"
+        >
+          <span class="text-xl font-bold font-orbitron"
+            >AXIS COMMUNICATIONS</span
+          >
+          <span class="text-xl font-bold font-orbitron">HIKVISION</span>
+          <span class="text-xl font-bold font-orbitron">UBIQUITI</span>
+          <span class="text-xl font-bold font-orbitron">DAHUA</span>
+          <span class="text-xl font-bold font-orbitron">HANWHA</span>
+        </div>
+      </div> 
+    </section> -->
+    <section class="py-20 px-6 lg:px-40 bg-white">
+      <div
+        class="max-w-[960px] mx-auto text-center flex flex-col items-center gap-8"
+      >
+        <div
+          class="size-16 rounded-full bg-red-50 flex items-center justify-center text-primary mb-2"
+        >
+          <span class="material-symbols-outlined text-4xl">add_moderator</span>
+        </div>
+        <h2
+          class="text-[#171212] text-3xl lg:text-5xl font-orbitron font-bold leading-tight"
+        >
+          READY TO SECURE YOUR PREMISES?
+        </h2>
+        <p class="text-gray-600 text-lg max-w-2xl">
+          Every building is different. Schedule a free site survey today, and
+          let our experts design a custom surveillance plan tailored to your
+          vulnerabilities.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+          <button
+            class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary hover:bg-[#a01a1f] text-white text-lg font-bold shadow-lg shadow-primary/25 transition-all hover:-translate-y-1"
+          >
+            Get a Free Quote
+          </button>
+          <button
+            class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white border-2 border-gray-200 hover:border-primary text-[#171212] hover:text-primary text-lg font-bold transition-all"
+          >
+            Contact Support
+          </button>
+        </div>
+      </div>
+    </section>
+     <footer
+        class="bg-accent dark:bg-slate-900 border-t border-black dark:border-slate-800 text-white"
+      >
+        <div class="container mx-auto px-6 py-12 md:py-16 md:px-16">
+          <div
+            class="flex justify-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:flex justify-center"
+          >
+            <div class="col-span-2 lg:col-span-1">
+              <a
+                class="flex items-center justify-center bg-white rounded-xl"
+                href="#"
+              >
+                <img
+                  alt="Summit IT Solutions Logo"
+                  class="w-40 h-20"
+                  src="../asset/SITS logo.png"
+                />
+              </a>
+              <p class="mt-4 text-sm text-white dark:text-slate-400">
+                Your Peak Partner in IT &amp; Cybersecurity
+              </p>
+
+              <h6
+                class="font-bold font-display text-white dark:text-white mt-4 text-[1.4rem]"
+              >
+                Company
+              </h6>
+              <ul class="space-y-1 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+              <br />
+
+              <h6
+                class="font-bold font-display text-white dark:text-white mt-4 text-[1.4rem]"
+              >
+                Resources
+              </h6>
+              <ul>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Blog Center</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Our Services
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Managed Cybersecurity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Penetration Testing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >IT Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >IT Management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Co-Managed IT</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Backup &amp; Recovery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Business Communications (VoIP)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Conference Room as a Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Compliance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Managed Print Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >New Office Setup</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Industries
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Law Firms</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Accounting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Financial Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Healthcare & Dental</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Veterinary Clinics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Service Business</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Retail</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Manufacturing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Golf Clubs & Hospitality</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Real Estate</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6
+                class="font-bold font-display text-white dark:text-white mb-4 text-[1.4rem]"
+              >
+                Hardware
+              </h6>
+              <ul class="space-y-3 text-md">
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Business Phones</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Networking Equipment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Cameras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Door Access Control</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
+                    href="#"
+                    >Conference Rooms</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-white dark:text-slate-400 font-display"
+          >
+            <p>© 2023 Summit IT Solutions, LLC. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!--JavaScipt-->
+  <script src="../js/script.js"></script>
+
+   
+</html>
