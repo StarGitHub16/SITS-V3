@@ -37,7 +37,7 @@
 
 <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="font-sans hero-bg-light dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased">
+<body class="font-sans bg-background-light bg-no-repeat dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased">
   <div class="relative min-h-screen" x-data="{ isMenuOpen: false }">
    
     <header class="sticky top-0 z-50 bg-background-light/60 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
@@ -68,14 +68,13 @@
         <a href="./penetration-testing.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Penetration Testing</a>
         <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Support</a>
         <a href="./it-management.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">IT Management</a>
-
         <a href="./co-managed-it.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Co-Managed IT</a>
         <a href="./bdr.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Backup & Recovery</a>
-        <a href="./it-support.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Communications (VoIP)</a>
+        <a href="./business-voip.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Communications (VoIP)</a>
         <a href="./conference-service.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Room as a Service</a>
         <a href="./compliance.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Compliance</a>
         <a href="./managed-print.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Managed Print Services</a>
-        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">New Office Setup</a>
+        <a href="./new-office-setup.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">New Office Setup</a>
       </div>
     </div>
   </div>
@@ -93,12 +92,11 @@
          x-transition:leave-end="opacity-0 transform scale-95"
          x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
       <div class="py-1 text-center">
-        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Phones</a>
-        <a href="#team" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Networking Equipment</a>
-        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Cameras</a>
-        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Door Access Control</a>
-        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Rooms</a>
- 
+        <a href="../Hardware/business-phones.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Business Phones</a>
+        <a href="../Hardware/networking-equipment.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Networking Equipment</a>
+        <a href="../Hardware/camera.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Cameras</a>
+        <a href="../Hardware/door-access-control.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Door Access Control</a>
+        <a href="../Hardware/conference-room.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Conference Rooms</a>
       </div>
     </div>
   </div>
@@ -117,19 +115,16 @@
          x-transition:leave-end="opacity-0 transform scale-95"
          x-cloak class="absolute z-10 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
       <div class="py-1 text-center">
-        <a href="#managed-cybersecurity" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Law Firms</a>
-        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Accounting</a>
-        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Financial Services</a>
-        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Healthcare & Dental</a>
-        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Veterinary Clinics</a>
-
-        <a href="#it-support" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Service Business</a>
-        <a href="#cloud-services" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Retail</a>
-        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Manufacturing</a>
-        
-        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent   dark:hover:bg-slate-700 font-display">Golf Clubs & Hospitality</a>
-
-        <a href="#voip" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Real Estate</a>
+        <a href="../Industry/law-firms.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 dark:hover:bg-slate-700 font-display">Law Firms</a>
+        <a href="../Industry/accounting.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Accounting</a>
+        <a href="../Industry/financial-services.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Financial Services</a>
+        <a href="../Industry/healthcare-dental.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Healthcare & Dental</a>
+        <a href="../Industry/veterinary.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent dark:hover:bg-slate-700 font-display">Veterinary Clinics</a>
+        <a href="../Industry/service-business.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Service Business</a>
+        <a href="../Industry/retail.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Retail</a>
+        <a href="../Industry/manufacturing.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Manufacturing</a>
+        <a href="../Industry/clubs-hospitality.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent   dark:hover:bg-slate-700 font-display">Golf Clubs & Hospitality</a>
+        <a href="../Industry/real-estate.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Real Estate</a>
       </div>
     </div>
   </div>
@@ -146,8 +141,8 @@
          x-transition:leave-end="opacity-0 transform scale-95"
          x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
       <div class="py-1 text-center">
-        <a href="#about-us" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Why Summit?</a>
-        <a href="#careers" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Careers</a>
+        <a href="../About/whysummit.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Why Summit?</a>
+        <a href="../About/careers.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Careers</a>
       </div>
     </div>
   </div>
@@ -165,7 +160,7 @@
          x-transition:leave-end="opacity-0 transform scale-95"
          x-cloak class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 focus:outline-none origin-top-left">
       <div class="py-1 text-center">
-        <a href="#latest-posts" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Blog Center</a>
+        <a href="../Resources/blog-center.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 hover:text-accent  dark:hover:bg-slate-700 font-display">Blog Center</a>
       </div>
     </div>
   </div>
@@ -206,9 +201,9 @@
         <div
           class="p-4 border-b border-slate-200 dark:border-slate-700 flex justify-end"
         >
-          <button  
+          <button
             @click="isMenuOpen = false"
-            class="text-slate-800 dark:text-slate-200" 
+            class="text-slate-800 dark:text-slate-200"
           >
             <span class="material-symbols-outlined">close</span>
           </button>
@@ -238,60 +233,60 @@
               class="flex flex-col space-y-3 bg-white rounded-lg"
             >
               <a
-                href="#managed-cybersecurity"
+                href="./managed-cybersecurity.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 text-center hover:text-accent dark:hover:text-accent py-1 font-display"
                 >Managed Cybersecurity</a
               >
               <a
-                href="#it-support"
+                href="./penetration-testing.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Penetration Testing</a
               >
               <a
-                href="#it-support"
+                href="./it-support.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >IT Support</a
               >
               <a
-                href="#it-support"
+                href="./it-management.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >IT Management</a
               >
               <a
-                href="#it-support"
+                href="./co-managed-it.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Co-Managed IT</a
               >
               <a
-                href="#it-support"
+                href="./bdr.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Backup & Recovery</a
               >
               <a
-                href="#it-support"
+                href="./business-voip.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Business Communications (VoIP)</a
               >
               <a
-                href="#cloud-services"
+                href="./conference-service.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Conference Room as a Service</a
               >
               <a
-                href="#voip"
+                href="./compliance.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Compliance</a
               >
 
               <a
-                href="#voip"
+                href="./managed-print.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Managed Print Services</a
               >
 
 
                 <a
-                href="#careers"
+                href="./new-office-setup.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >New Office Setup</a
               >
@@ -321,27 +316,27 @@
               class="flex flex-col space-y-3 bg-white rounded-lg"
             >
               <a
-                href="#about-us"
+                href="../Hardware/business-phones.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Business Phones</a
               >
               <a
-                href="#team"
+                href="../Hardware/networking-equipment.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Networking Equipment</a
               >
               <a
-                href="#careers"
+                href="../Hardware/camera.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Cameras</a
               >
               <a
-                href="#careers"
+                href="../Hardware/door-access-control.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Door Access Control</a
               >
               <a
-                href="#careers"
+                href="../Hardware/conference-room.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Conference Rooms</a
               >
@@ -372,52 +367,52 @@
               class="flex flex-col space-y-3 bg-white rounded-lg"
             >
               <a
-                href="#managed-cybersecurity"
+                href="../Industry/law-firms.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Law Firms</a
               >
               <a
-                href="#it-support"
+                href="../Industry/accounting.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Accounting</a
               >
               <a
-                href="#it-support"
+                href="../Industry/financial-services.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Financial Services</a
               >
               <a
-                href="#it-support"
+                href="../Industry/healthcare-dental.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Healthcare & Dental</a
               >
               <a
-                href="#it-support"
+                href="../Industry/veterinary.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Veterinary Clinics</a
               >
               <a
-                href="#it-support"
+                href="../Industry/service-business.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Service Business</a
               >
               <a
-                href="#cloud-services"
+                href="../Industry/retail.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Retail</a
               >
               <a
-                href="#voip"
+                href="../Industry/manufacturing.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Manufacturing</a
               >
               <a
-                href="#voip"
+                href="../Industry/clubs-hospitality.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Golf Clubs & Hospitality</a
               >
               <a
-                href="#voip"
+                href="../Industry/real-estate.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Real Estate</a
               >
@@ -447,12 +442,12 @@
               class="flex flex-col space-y-3 bg-white rounded-lg"
             >
               <a
-                href="#about-us"
+                href="../About/whysummit.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Why Summit?</a
               >
               <a
-                href="#careers"
+                href="../About/careers.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Careers</a
               >
@@ -482,7 +477,7 @@
               class="flex flex-col space-y-3 bg-white rounded-lg"
             >
               <a
-                href="#latest-posts"
+                href="../Resources/blog-center.html"
                 class="text-sm text-gray-700 dark:text-gray-200 hover:text-accent hover:bg-gray-100 text-center dark:hover:text-accent py-1 font-display"
                 >Blog Center</a
               >
@@ -854,7 +849,7 @@
             <div class="col-span-2 lg:col-span-1">
               <a
                 class="flex items-center justify-center bg-white rounded-xl"
-                href="#"
+                href="../index.html"
               >
                 <img
                   alt="Summit IT Solutions Logo"
@@ -875,14 +870,14 @@
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../About/whysummit.html"
                     >About Us</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../About/careers.html"
                     >Careers</a
                   >
                 </li>
@@ -898,7 +893,7 @@
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Resources/blog-center.html"
                     >Blog Center</a
                   >
                 </li>
@@ -915,77 +910,77 @@
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./managed-cybersecurity.html"
                     >Managed Cybersecurity</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./penetration-testing.html"
                     >Penetration Testing</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./it-support.html"
                     >IT Support</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./it-management.html"
                     >IT Management</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./co-managed-it.html"
                     >Co-Managed IT</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./bdr.html"
                     >Backup &amp; Recovery</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./business-voip.html"
                     >Business Communications (VoIP)</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./conference-service.html"
                     >Conference Room as a Service</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./compliance.html"
                     >Compliance</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./managed-print.html"
                     >Managed Print Services</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="./new-office-setup.html"
                     >New Office Setup</a
                   >
                 </li>
@@ -1002,70 +997,70 @@
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/law-firms.html"
                     >Law Firms</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/accounting.html"
                     >Accounting</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/financial-services.html"
                     >Financial Services</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/healthcare-dental.html"
                     >Healthcare & Dental</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/veterinary.html"
                     >Veterinary Clinics</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/service-business.html"
                     >Service Business</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/retail.html"
                     >Retail</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/manufacturing.html"
                     >Manufacturing</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/clubs-hospitality.html"
                     >Golf Clubs & Hospitality</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Industry/real-estate.html"
                     >Real Estate</a
                   >
                 </li>
@@ -1082,35 +1077,35 @@
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Hardware/business-phones.html"
                     >Business Phones</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Hardware/networking-equipment.html"
                     >Networking Equipment</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Hardware/camera.html"
                     >Cameras</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Hardware/door-access-control.html"
                     >Door Access Control</a
                   >
                 </li>
                 <li>
                   <a
                     class="text-white dark:text-slate-400 hover:text-gray-300 dark:hover:text-gray-300"
-                    href="#"
+                    href="../Hardware/conference-room.html"
                     >Conference Rooms</a
                   >
                 </li>
@@ -1131,7 +1126,7 @@
   <!--JavaScipt-->
   <script src="../js/script.js"></script>
 
-  <!--Lottie Scripts-->
+   <!--Lottie Scripts-->
   <script>
     var animation = lottie.loadAnimation({
 
@@ -1142,5 +1137,4 @@
       path: '../asset/itmanagementlotte.json'
     });
   </script>
-
 </html>
