@@ -724,7 +724,7 @@
       ></div>
     </div>
     <!-- Industry Spotlight Section -->
-    <div class="relative w-full bg-background-light py-20">
+    <div class="relative w-full bg-background-light py-20 overflow-hidden">
       <div class="max-w-[960px] mx-auto px-4 sm:px-10">
         <div class="text-center mb-12">
           <span class="text-primary font-bold tracking-widest uppercase text-sm"
@@ -740,7 +740,8 @@
         >
           <div class="flex justify-between min-w-[600px]">
             <a
-              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl bg-primary/5 border border-primary/20 gap-2 transition-all cursor-pointer group"
+              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl bg-primary/10 border border-primary/20 gap-2 transition-all cursor-pointer group industry-button"
+              data-target="marketing-agency"
             >
               <span class="material-symbols-outlined text-primary text-[28px]"
                 >campaign</span
@@ -748,49 +749,53 @@
               <p class="text-[#171212] text-sm font-bold">Marketing Agencies</p>
             </a>
             <a
-              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent hover:bg-gray-50 gap-2 transition-all cursor-pointer group"
-            >
+              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent  gap-2 transition-all cursor-pointer group industry-button"
+              data-target="consulting-firm"
+              >
               <span
-                class="material-symbols-outlined text-gray-400 group-hover:text-primary text-[28px] transition-colors"
+                class="material-symbols-outlined text-primary group-hover:text-primary text-[28px] transition-colors"
                 >business_center</span
               >
               <p
-                class="text-gray-500 group-hover:text-[#171212] text-sm font-bold transition-colors"
+                class="group-hover:text-[#171212] text-sm font-bold transition-colors"
               >
                 Consulting Firms
               </p>
             </a>
             <a
-              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent hover:bg-gray-50 gap-2 transition-all cursor-pointer group"
+              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent  gap-2 transition-all cursor-pointer group industry-button"
+              data-target="real-estate"
             >
               <span
-                class="material-symbols-outlined text-gray-400 group-hover:text-primary text-[28px] transition-colors"
+                class="material-symbols-outlined text-primary group-hover:text-primary text-[28px] transition-colors"
                 >apartment</span
               >
               <p
-                class="text-gray-500 group-hover:text-[#171212] text-sm font-bold transition-colors"
+                class=" group-hover:text-[#171212] text-sm font-bold transition-colors"
               >
                 Real Estate
               </p>
             </a>
             <a
-              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent hover:bg-gray-50 gap-2 transition-all cursor-pointer group"
-            >
+              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent  gap-2 transition-all cursor-pointer group industry-button"
+              data-target="construction"
+              >
               <span
-                class="material-symbols-outlined text-gray-400 group-hover:text-primary text-[28px] transition-colors"
+                class="material-symbols-outlined text-primary group-hover:text-primary text-[28px] transition-colors"
                 >health_and_safety</span
               >
               <p
-                class="text-gray-500 group-hover:text-[#171212] text-sm font-bold transition-colors"
+                class="group-hover:text-[#171212] text-sm font-bold transition-colors"
               >
                 Construction
               </p>
             </a>
           </div>
+
         </div>
         <!-- Tab Content (Marketing Focus) -->
         <div
-          class="flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-2xl border border-[#e5dcdc] shadow-lg relative overflow-hidden"
+          class=" transition-all duration-300 flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-2xl border border-[#e5dcdc] shadow-lg relative overflow-hidden transition-all duration-300 transform opacity-100 translate-x-0 industry-content" id="marketing-agency"
         >
           <!-- Decorative accent -->
           <div
@@ -853,6 +858,206 @@
             </a>
           </div>
         </div>
+
+
+        <!-- Tab Content (Consulting Firms) -->
+        <div
+          class=" transition-all duration-300 flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-2xl border border-[#e5dcdc] shadow-lg relative overflow-hidden hidden transition-all duration-300 transform opacity-100 translate-x-0 industry-content" id="consulting-firm"
+        >
+          <!-- Decorative accent -->
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-10 -mt-10"
+          ></div>
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative rounded-lg overflow-hidden aspect-video shadow-md"
+            >
+              <div
+                class="absolute inset-0 bg-primary/10 mix-blend-multiply"
+              ></div>
+              <div
+                class="w-full h-full bg-cover bg-center"
+                data-alt="Creative agency team looking at design mockups on a monitor"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkV37l2eGYszeye94r2tP5H-B6-8s5SU9EsrwFHk1Yi_52w5ad_oLynfz9snuvCTAkHbVXK9sq8q6Rr95yYqL0UJzTx8UwJjDUEF1liLhovDx9iMj_HoINt7F6h0RdjgLW-bRBfIYTl5EtH3XPw4eMyDZogZTczfD0spVCgl2A1p8yhnWn2Yb1pMedvcYefuXdwAgGxirE95OepLt7VZi0vDWVIuZaNvAROvEihdMoP-ckxcYUiNVEmQA1UrkEwp3t3cYc6hgSsP8');
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col gap-4">
+            <h3 class="text-2xl font-bold font-title">
+              For Consulting Firms
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Creative files are huge, and deadlines are tight. We implement
+              lightning-fast local servers paired with cloud backups, ensuring
+              your designers never wait on a loading bar. Plus, secure client
+              portals for approval processes.
+            </p>
+            <ul class="flex flex-col gap-3 mt-2">
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                High-Bandwidth Network Setup
+              </li>
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                DAM (Digital Asset Management) Integration
+              </li>
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                Mac &amp; PC Mixed Environment Support
+              </li>
+            </ul>
+            <a
+              class="text-primary font-bold flex items-center gap-1 mt-2 hover:gap-2 transition-all"
+              href="#"
+            >
+              View Marketing Solutions
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+
+         <!-- Tab Content (Real Estate) -->
+        <div
+          class=" transition-all duration-300 flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-2xl border border-[#e5dcdc] shadow-lg relative overflow-hidden hidden transition-all duration-300 transform opacity-100 translate-x-0 industry-content" id="real-estate"
+        >
+          <!-- Decorative accent -->
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-10 -mt-10"
+          ></div>
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative rounded-lg overflow-hidden aspect-video shadow-md"
+            >
+              <div
+                class="absolute inset-0 bg-primary/10 mix-blend-multiply"
+              ></div>
+              <div
+                class="w-full h-full bg-cover bg-center"
+                data-alt="Creative agency team looking at design mockups on a monitor"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkV37l2eGYszeye94r2tP5H-B6-8s5SU9EsrwFHk1Yi_52w5ad_oLynfz9snuvCTAkHbVXK9sq8q6Rr95yYqL0UJzTx8UwJjDUEF1liLhovDx9iMj_HoINt7F6h0RdjgLW-bRBfIYTl5EtH3XPw4eMyDZogZTczfD0spVCgl2A1p8yhnWn2Yb1pMedvcYefuXdwAgGxirE95OepLt7VZi0vDWVIuZaNvAROvEihdMoP-ckxcYUiNVEmQA1UrkEwp3t3cYc6hgSsP8');
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col gap-4">
+            <h3 class="text-2xl font-bold font-title">
+              For Real Estate
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Creative files are huge, and deadlines are tight. We implement
+              lightning-fast local servers paired with cloud backups, ensuring
+              your designers never wait on a loading bar. Plus, secure client
+              portals for approval processes.
+            </p>
+            <ul class="flex flex-col gap-3 mt-2">
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                High-Bandwidth Network Setup
+              </li>
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                DAM (Digital Asset Management) Integration
+              </li>
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                Mac &amp; PC Mixed Environment Support
+              </li>
+            </ul>
+            <a
+              class="text-primary font-bold flex items-center gap-1 mt-2 hover:gap-2 transition-all"
+              href="#"
+            >
+              View Marketing Solutions
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+
+         <!-- Tab Content (Construction) -->
+        <div
+          class=" transition-all duration-300 flex flex-col md:flex-row gap-8 items-center bg-white p-8 rounded-2xl border border-[#e5dcdc] shadow-lg relative overflow-hidden hidden transition-all duration-300 transform opacity-100 translate-x-0 industry-content" id="construction"
+        >
+          <!-- Decorative accent -->
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-10 -mt-10"
+          ></div>
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative rounded-lg overflow-hidden aspect-video shadow-md"
+            >
+              <div
+                class="absolute inset-0 bg-primary/10 mix-blend-multiply"
+              ></div>
+              <div
+                class="w-full h-full bg-cover bg-center"
+                data-alt="Creative agency team looking at design mockups on a monitor"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkV37l2eGYszeye94r2tP5H-B6-8s5SU9EsrwFHk1Yi_52w5ad_oLynfz9snuvCTAkHbVXK9sq8q6Rr95yYqL0UJzTx8UwJjDUEF1liLhovDx9iMj_HoINt7F6h0RdjgLW-bRBfIYTl5EtH3XPw4eMyDZogZTczfD0spVCgl2A1p8yhnWn2Yb1pMedvcYefuXdwAgGxirE95OepLt7VZi0vDWVIuZaNvAROvEihdMoP-ckxcYUiNVEmQA1UrkEwp3t3cYc6hgSsP8');
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col gap-4">
+            <h3 class="text-2xl font-bold font-title">
+              For Construction
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Creative files are huge, and deadlines are tight. We implement
+              lightning-fast local servers paired with cloud backups, ensuring
+              your designers never wait on a loading bar. Plus, secure client
+              portals for approval processes.
+            </p>
+            <ul class="flex flex-col gap-3 mt-2">
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                High-Bandwidth Network Setup
+              </li>
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                DAM (Digital Asset Management) Integration
+              </li>
+              <li class="flex items-center gap-3 text-sm font-medium">
+                <span class="material-symbols-outlined text-primary text-xl"
+                  >check</span
+                >
+                Mac &amp; PC Mixed Environment Support
+              </li>
+            </ul>
+            <a
+              class="text-primary font-bold flex items-center gap-1 mt-2 hover:gap-2 transition-all"
+              href="#"
+            >
+              View Marketing Solutions
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- Tech Stack / Tools -->
