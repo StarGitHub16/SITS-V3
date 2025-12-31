@@ -87,3 +87,9 @@ details[open] > summary .material-symbols-outlined {
         transform: translateX(0px);
         transition: all .8s ease-in-out;
     }
+
+    @media (max-width: 768px) {
+    .scroll-item-right {
+        transform: translateX(20px);
+    }
+}
