@@ -537,12 +537,12 @@
             </p>
             <div class="flex flex-wrap gap-4 mt-2">
               <button
-                class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:shadow-xl hover:bg-red-700 transition-all"
+                class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:shadow-xl hover:bg-red-700 transition-all font-display"
               >
                 Book Strategy Call
               </button>
               <button
-                class="flex items-center justify-center rounded-lg h-12 px-6 bg-transparent border-2 border-[#e5dcdc] text-[#171212] text-base font-bold hover:border-primary hover:text-primary transition-colors"
+                class="flex items-center justify-center rounded-lg h-12 px-6 bg-transparent border-2 border-[#e5dcdc] text-[#171212] text-base font-bold hover:border-primary hover:text-primary transition-colors font-display"
               >
                 View Case Studies
               </button>
@@ -624,7 +624,7 @@
         <div class="flex flex-col gap-16">
           <div class="flex flex-col gap-4 text-center max-w-[800px] mx-auto">
             <h2
-              class="text-white text-3xl md:text-4xl font-bold font-title uppercase tracking-wide"
+              class="text-white text-3xl md:text-4xl font-bold font-title uppercase tracking-wide font-display"
             >
               Tailored IT for
               <span class="text-primary">Service-Based</span> Growth
@@ -635,7 +635,7 @@
               data is fortress-secure.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 scroll-item">
             <!-- Feature 1 -->
             <div
               class="group flex flex-col gap-4 bg-[#2a2222] p-6 rounded-xl border border-white/5 hover:border-primary/50 transition-all hover:-translate-y-1"
@@ -646,7 +646,7 @@
                 <span class="material-symbols-outlined">cloud_sync</span>
               </div>
               <div class="flex flex-col gap-2">
-                <h3 class="text-white text-lg font-bold font-title">
+                <h3 class="text-white text-lg font-bold font-title font-display">
                   Hybrid Work Ready
                 </h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
@@ -665,7 +665,7 @@
                 <span class="material-symbols-outlined">security</span>
               </div>
               <div class="flex flex-col gap-2">
-                <h3 class="text-white text-lg font-bold font-title">
+                <h3 class="text-white text-lg font-bold font-title font-display">
                   Client Data Fortress
                 </h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
@@ -684,7 +684,7 @@
                 <span class="material-symbols-outlined">hub</span>
               </div>
               <div class="flex flex-col gap-2">
-                <h3 class="text-white text-lg font-bold font-title">
+                <h3 class="text-white text-lg font-bold font-title font-display">
                   Seamless Comms
                 </h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
@@ -703,7 +703,7 @@
                 <span class="material-symbols-outlined">trending_up</span>
               </div>
               <div class="flex flex-col gap-2">
-                <h3 class="text-white text-lg font-bold font-title">
+                <h3 class="text-white text-lg font-bold font-title font-display">
                   Scalable Growth
                 </h3>
                 <p class="text-gray-400 text-sm leading-relaxed">
@@ -717,20 +717,20 @@
       </div>
     </div>
     <!-- Slanted Divider -->
-    <div class="relative h-20 bg-background-dark -mt-1 overflow-hidden">
+    <div class="relative h-20 lg:h-32 bg-background-dark -mt-1 overflow-hidden">
       <div
-        class="absolute top-0 left-0 w-full h-full bg-background-light"
-        style="clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%)"
+        class="absolute top-0 left-0 w-full lg:h-[101%] bg-[#d1d5db]"
+        style="clip-path: polygon(0 100%, 50% 0, 100% 100%, 0 100%)"
       ></div>
     </div>
     <!-- Industry Spotlight Section -->
-    <div class="relative w-full bg-background-light py-20 overflow-hidden">
+    <div class="relative w-full bg-[#d1d5db] py-20 overflow-hidden">
       <div class="max-w-[960px] mx-auto px-4 sm:px-10">
         <div class="text-center mb-12">
-          <span class="text-primary font-bold tracking-widest uppercase text-sm"
+          <span class="text-primary font-bold tracking-widest uppercase text-sm font-display"
             >Specialized Expertise</span
           >
-          <h2 class="text-[#171212] text-3xl font-bold font-title mt-2">
+          <h2 class="text-[#171212] text-4xl font-bold font-title mt-2 font-display">
             Industries We Empower
           </h2>
         </div>
@@ -740,13 +740,13 @@
         >
           <div class="flex justify-between min-w-[600px]">
             <a
-              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl bg-primary/10 border border-primary/20 gap-2 transition-all cursor-pointer group industry-button"
+              class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl bg-primary/10 border  gap-2 transition-all cursor-pointer group industry-button"
               data-target="marketing-agency"
             >
               <span class="material-symbols-outlined text-primary text-[28px]"
                 >campaign</span
               >
-              <p class="text-[#171212] text-sm font-bold">Marketing Agencies</p>
+              <p class="text-[#171212] text-sm font-bold font-display">Marketing Agencies</p>
             </a>
             <a
               class="flex flex-1 flex-col items-center justify-center py-4 px-2 rounded-xl border border-transparent  gap-2 transition-all cursor-pointer group industry-button"
@@ -757,7 +757,7 @@
                 >business_center</span
               >
               <p
-                class="group-hover:text-[#171212] text-sm font-bold transition-colors"
+                class="group-hover:text-[#171212] text-sm font-bold transition-colors font-display"
               >
                 Consulting Firms
               </p>
@@ -771,7 +771,7 @@
                 >apartment</span
               >
               <p
-                class=" group-hover:text-[#171212] text-sm font-bold transition-colors"
+                class=" group-hover:text-[#171212] text-sm font-bold transition-colors font-display"
               >
                 Real Estate
               </p>
@@ -785,7 +785,7 @@
                 >health_and_safety</span
               >
               <p
-                class="group-hover:text-[#171212] text-sm font-bold transition-colors"
+                class="group-hover:text-[#171212] text-sm font-bold transition-colors font-display"
               >
                 Construction
               </p>
@@ -818,7 +818,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 flex flex-col gap-4">
-            <h3 class="text-2xl font-bold font-title">
+            <h3 class="text-2xl font-bold font-title font-display">
               For Marketing Agencies
             </h3>
             <p class="text-gray-600 leading-relaxed">
@@ -885,7 +885,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 flex flex-col gap-4">
-            <h3 class="text-2xl font-bold font-title">
+            <h3 class="text-2xl font-bold font-title font-display">
               For Consulting Firms
             </h3>
             <p class="text-gray-600 leading-relaxed">
@@ -951,7 +951,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 flex flex-col gap-4">
-            <h3 class="text-2xl font-bold font-title">
+            <h3 class="text-2xl font-bold font-title font-display">
               For Real Estate
             </h3>
             <p class="text-gray-600 leading-relaxed">
@@ -1017,7 +1017,7 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 flex flex-col gap-4">
-            <h3 class="text-2xl font-bold font-title">
+            <h3 class="text-2xl font-bold font-title font-display">
               For Construction
             </h3>
             <p class="text-gray-600 leading-relaxed">
@@ -1094,7 +1094,7 @@
       </div>
     </div>
     <!-- CTA Section -->
-    <div class="relative bg-primary py-24 overflow-hidden">
+    <div class="relative bg-gradient-to-br from-[#bf2026] via-[#6d1f38] to-[#020617] py-24 overflow-hidden">
       <!-- Abstract Background Pattern -->
       <div
         class="absolute inset-0 opacity-10"
@@ -1111,7 +1111,7 @@
         class="absolute right-0 top-0 h-full w-1/3 bg-white/5 skew-x-12 translate-x-10"
       ></div>
       <div class="max-w-[800px] mx-auto px-4 text-center relative z-10">
-        <h2 class="text-white text-4xl sm:text-5xl font-black font-title mb-6">
+        <h2 class="text-white text-4xl sm:text-5xl font-black font-title mb-6 font-display">
           Focus on Clients,<br />Not Cables.
         </h2>
         <p class="text-white/90 text-lg mb-10 max-w-[600px] mx-auto">
